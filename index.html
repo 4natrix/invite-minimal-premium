@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <title>Айбек & Айгерим | Премиум свадьба</title>
     
-    <!-- ⭐⭐⭐ ШРИФТЫ ⭐⭐⭐ -->
+    <!-- ШРИФТЫ -->
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -104,7 +104,6 @@
             font-weight: 400;
         }
         
-        /* ⭐⭐⭐ ИСПРАВЛЕННЫЙ & - ТЕПЕРЬ ПО ЦЕНТРУ ⭐⭐⭐ */
         .hero-names {
             font-family: 'EB Garamond', 'Georgia', serif;
             font-style: italic;
@@ -135,45 +134,7 @@
             display: inline-block;
             white-space: nowrap;
             line-height: 1;
-            margin: 0 5px;
             transform: translateY(2px);
-        }
-        
-        @media (max-width: 600px) {
-            .hero-names {
-                font-size: 2.8rem;
-                flex-direction: column;
-                gap: 0;
-            }
-            .name-part {
-                white-space: normal;
-                display: block;
-                width: 100%;
-            }
-            .hero-and {
-                display: block;
-                font-size: 2.4rem;
-                margin: 0;
-                transform: translateY(0);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero-names {
-                font-size: 2.4rem;
-            }
-            .hero-and {
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width: 360px) {
-            .hero-names {
-                font-size: 2rem;
-            }
-            .hero-and {
-                font-size: 1.8rem;
-            }
         }
         
         .hero-date {
@@ -305,7 +266,7 @@
             opacity: 1;
         }
         
-        /* ⭐⭐⭐ ПРОГРАММА ДНЯ - ПОЛНОСТЬЮ ПЕРЕРАБОТАНА ДЛЯ ТЕЛЕФОНА ⭐⭐⭐ */
+        /* ⭐⭐⭐ ПРОГРАММА ДНЯ - НА ТЕЛЕФОНЕ ТОЖЕ СЛЕВА/СПРАВА ⭐⭐⭐ */
         .timeline-section {
             background: #faf9f7;
             padding: 100px 0;
@@ -317,14 +278,14 @@
             margin: 60px auto 0;
             display: flex;
             flex-direction: column;
-            gap: 80px;
+            gap: 60px;
         }
         
         .timeline-block {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 50px;
+            gap: 40px;
         }
         
         .timeline-block.reverse {
@@ -332,8 +293,8 @@
         }
         
         .timeline-image {
-            flex: 1;
-            height: 300px;
+            flex: 0 0 280px;
+            height: 200px;
             background-size: cover;
             background-position: center;
             filter: grayscale(80%);
@@ -342,23 +303,23 @@
         
         .timeline-content {
             flex: 1;
-            padding: 20px 30px;
+            padding: 0 20px;
         }
         
         .timeline-time {
             font-family: 'Lora', 'Georgia', serif;
             font-style: italic;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: #b5a37e;
             font-weight: 400;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         
         .timeline-title {
             font-family: 'EB Garamond', 'Georgia', serif;
             font-style: italic;
-            font-size: 1.9rem;
-            margin-bottom: 15px;
+            font-size: 1.7rem;
+            margin-bottom: 10px;
             color: #1e1e1e;
             font-weight: 400;
             letter-spacing: 1px;
@@ -367,81 +328,82 @@
         .timeline-desc {
             font-family: 'Cardo', 'Georgia', serif;
             color: #6a6a6a;
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 1.6;
         }
         
-        /* ⭐⭐⭐ ПОЛНАЯ АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА - КАЖДЫЙ БЛОК ОТДЕЛЬНО ⭐⭐⭐ */
+        /* ⭐⭐⭐ ТЕЛЕФОНЫ - ТОЖЕ СЛЕВА/СПРАВА, ФОТО МЕНЬШЕ ⭐⭐⭐ */
         @media (max-width: 768px) {
-            .timeline-block, 
+            .timeline-block,
             .timeline-block.reverse {
-                flex-direction: column !important;
-                gap: 15px;
-                width: 100%;
+                gap: 20px;
             }
             
             .timeline-image {
-                width: 100%;
-                height: 220px;
-                margin: 0;
-                flex: none;
+                flex: 0 0 140px;
+                height: 100px;
             }
             
             .timeline-content {
-                width: 100%;
-                padding: 15px 0;
-                text-align: center;
-                flex: none;
+                padding: 0 10px;
             }
             
             .timeline-time {
-                font-size: 1.4rem;
-                margin-bottom: 5px;
+                font-size: 1.2rem;
+                margin-bottom: 4px;
             }
             
             .timeline-title {
-                font-size: 1.6rem;
-                margin-bottom: 10px;
+                font-size: 1.3rem;
+                margin-bottom: 6px;
             }
             
             .timeline-desc {
-                font-size: 1rem;
+                font-size: 0.9rem;
+                line-height: 1.4;
             }
         }
         
         @media (max-width: 480px) {
-            .timeline-grid {
-                gap: 60px;
+            .timeline-block,
+            .timeline-block.reverse {
+                gap: 15px;
             }
             
             .timeline-image {
-                height: 180px;
+                flex: 0 0 100px;
+                height: 80px;
             }
             
             .timeline-content {
-                padding: 10px 0;
+                padding: 0 5px;
             }
             
             .timeline-time {
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
             
             .timeline-title {
-                font-size: 1.5rem;
+                font-size: 1.1rem;
+            }
+            
+            .timeline-desc {
+                font-size: 0.8rem;
             }
         }
         
         @media (max-width: 360px) {
             .timeline-image {
-                height: 150px;
+                flex: 0 0 80px;
+                height: 70px;
             }
             
             .timeline-time {
-                font-size: 1.2rem;
+                font-size: 0.9rem;
             }
             
             .timeline-title {
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
         }
         
@@ -947,6 +909,7 @@
         @media (max-width: 768px) {
             html { font-size: 14px; }
             .hero-names { font-size: 3.2rem; }
+            .hero-and { font-size: 2.4rem; }
             .hero-date { font-size: 1.3rem; }
             .timer-number { font-size: 2.2rem; }
             .timer-grid { gap: 25px; }
@@ -955,12 +918,31 @@
             .calendar-date { font-size: 2.8rem; }
             .section { padding: 70px 0; }
             .timeline-section { padding: 70px 0; }
-            .timeline-grid { gap: 60px; }
+        }
+        
+        @media (max-width: 600px) {
+            .hero-names {
+                font-size: 2.8rem;
+                flex-direction: column;
+                gap: 0;
+            }
+            .name-part {
+                white-space: normal;
+                display: block;
+                width: 100%;
+            }
+            .hero-and {
+                display: block;
+                font-size: 2.4rem;
+                margin: 0;
+                transform: translateY(0);
+            }
         }
         
         @media (max-width: 480px) {
             html { font-size: 13px; }
-            .hero-names { font-size: 2.6rem; }
+            .hero-names { font-size: 2.4rem; }
+            .hero-and { font-size: 2rem; }
             .timer-number { font-size: 1.8rem; }
             .timer-item { min-width: 65px; }
             .timer-grid { gap: 15px; }
@@ -988,7 +970,7 @@
     </style>
 </head>
 <body>
-    <!-- ⭐⭐⭐ ГЕРОЙ С ИСПРАВЛЕННЫМ & ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ ГЕРОЙ ⭐⭐⭐ -->
     <section class="hero">
         <div class="hero-content fade-in">
             <div class="hero-pre">СВАДЕБНОЕ ПРИГЛАШЕНИЕ</div>
@@ -1047,7 +1029,7 @@
         </div>
     </section>
     
-    <!-- ⭐⭐⭐ ПРОГРАММА ДНЯ - ПОЛНОСТЬЮ АДАПТИРОВАНА ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ ПРОГРАММА ДНЯ - СЛЕВА/СПРАВА НА ВСЕХ ЭКРАНАХ ⭐⭐⭐ -->
     <section class="timeline-section">
         <div class="container">
             <h2 class="section-title">Программа дня</h2>
