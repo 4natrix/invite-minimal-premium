@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>Айбек & Айгерим | Минимализм</title>
+    <title>Тиляпжан & Сахидям | Премиум свадьба</title>
     
     <!-- ⭐⭐⭐ КРАСИВЫЕ ШРИФТЫ ⭐⭐⭐ -->
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* ⭐⭐⭐ МИНИМАЛИЗМ - ПОЛНОСТЬЮ ⭐⭐⭐ */
         * {
             margin: 0;
             padding: 0;
@@ -56,7 +57,7 @@
             justify-content: center;
             text-align: center;
             background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-                        url('https://i.pinimg.com/736x/75/e7/69/75e7695632ee2d2342d523e47096bd65.jpg');
+                        url('https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1600&auto=format&fit=crop');
             background-size: cover;
             background-position: center 30%;
             background-attachment: fixed;
@@ -81,6 +82,7 @@
             opacity: 0.15;
             pointer-events: none;
             mix-blend-mode: multiply;
+            z-index: 1;
         }
         
         .hero-content {
@@ -111,6 +113,16 @@
             margin-bottom: 15px;
             color: white;
             line-height: 1.2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .hero-names .name-part {
+            display: inline-block;
+            white-space: nowrap;
         }
         
         .hero-and {
@@ -118,8 +130,10 @@
             font-style: italic;
             font-size: 3rem;
             color: #e6d5b8;
-            margin: 0 10px;
+            margin: 0 5px;
             font-weight: 400;
+            display: inline-block;
+            white-space: nowrap;
         }
         
         .hero-date {
@@ -137,13 +151,13 @@
             height: 1px;
             background: #e6d5b8;
             margin: 35px auto;
+            border: none;
         }
         
-        /* ⭐⭐⭐ ТАЙМЕР ⭐⭐⭐ */
+        /* ⭐⭐⭐ ТАЙМЕР - МИНИМАЛИЗМ ⭐⭐⭐ */
         .timer-section {
             margin-top: 40px;
             background: rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(3px);
             padding: 30px 20px;
             border: 1px solid rgba(255,255,255,0.15);
             display: inline-block;
@@ -182,7 +196,19 @@
             font-weight: 400;
         }
         
-        /* ⭐⭐⭐ СЕКЦИИ ⭐⭐⭐ */
+        .location-badge {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 30px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: white;
+            font-size: 0.95rem;
+            font-family: 'Inter', 'Arial', sans-serif;
+            letter-spacing: 2px;
+        }
+        
+        /* ⭐⭐⭐ СЕКЦИИ - МИНИМАЛИЗМ ⭐⭐⭐ */
         .section {
             padding: 100px 0;
             background: #ffffff;
@@ -214,9 +240,10 @@
             height: 1px;
             background: #b5a37e;
             margin: 0 auto 60px;
+            border: none;
         }
         
-        /* ⭐⭐⭐ ГАЛЕРЕЯ ⭐⭐⭐ */
+        /* ⭐⭐⭐ ГАЛЕРЕЯ - МИНИМАЛИЗМ ⭐⭐⭐ */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -238,26 +265,7 @@
             opacity: 1;
         }
         
-        @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .gallery-item {
-                height: 200px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-                gap: 2px;
-            }
-            .gallery-item {
-                height: 250px;
-            }
-        }
-        
-        /* ⭐⭐⭐ ПРОГРАММА ⭐⭐⭐ */
+        /* ⭐⭐⭐ ПРОГРАММА ДНЯ - ОБНОВЛЕННАЯ ⭐⭐⭐ */
         .timeline-section {
             background: #faf9f7;
             padding: 100px 0;
@@ -324,26 +332,160 @@
             font-family: 'Cardo', 'Georgia', serif;
             color: #6a6a6a;
             font-size: 1rem;
+            font-style: normal;
         }
         
-        @media (max-width: 480px) {
-            .timeline-item {
-                flex-direction: column;
-                padding-left: 20px;
-                margin-bottom: 35px;
-            }
-            .timeline-time {
-                min-width: auto;
-                padding-right: 0;
-                margin-bottom: 5px;
-                font-size: 1.2rem;
-            }
-            .timeline-title {
-                font-size: 1.3rem;
-            }
+        /* ⭐⭐⭐ ДРЕСС-КОД - НОВЫЙ БЛОК ⭐⭐⭐ */
+        .dresscode-section {
+            background: #ffffff;
+            padding: 100px 0;
         }
         
-        /* ⭐⭐⭐ МЕСТО ⭐⭐⭐ */
+        .dresscode-grid {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .dresscode-item {
+            flex: 0 1 300px;
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .dresscode-icon {
+            font-size: 2.5rem;
+            color: #b5a37e;
+            margin-bottom: 20px;
+        }
+        
+        .dresscode-item h3 {
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #1e1e1e;
+            font-weight: 400;
+        }
+        
+        .dresscode-item p {
+            font-family: 'Cardo', 'Georgia', serif;
+            color: #6a6a6a;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .dresscode-note {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: #faf9f7;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .dresscode-note p {
+            font-family: 'Cardo', 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #1e1e1e;
+        }
+        
+        /* ⭐⭐⭐ КАЛЕНДАРЬ - НОВЫЙ БЛОК ⭐⭐⭐ */
+        .calendar-section {
+            background: #faf9f7;
+            padding: 100px 0;
+        }
+        
+        .calendar-container {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            background: white;
+            padding: 50px 40px;
+        }
+        
+        .calendar-title {
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 2rem;
+            color: #b5a37e;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .calendar-date {
+            font-size: 3.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            color: #1e1e1e;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .calendar-month {
+            font-family: 'Lora', 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #6a6a6a;
+            margin-bottom: 30px;
+        }
+        
+        .calendar-weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            margin-bottom: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #8a8a8a;
+            letter-spacing: 1px;
+        }
+        
+        .calendar-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            font-family: 'Cardo', serif;
+        }
+        
+        .calendar-day {
+            padding: 10px;
+            font-size: 1rem;
+            color: #6a6a6a;
+        }
+        
+        .calendar-day.highlight {
+            background: #b5a37e;
+            color: white;
+        }
+        
+        .calendar-time {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #f0f0f0;
+            font-family: 'Cardo', serif;
+        }
+        
+        .calendar-time p {
+            font-size: 1.1rem;
+            color: #1e1e1e;
+            margin-bottom: 5px;
+        }
+        
+        .calendar-time strong {
+            color: #b5a37e;
+            font-family: 'EB Garamond', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+        
+        /* ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - ПРЕЖНЕЕ (Астана) ⭐⭐⭐ */
         .venue-section {
             background: #ffffff;
             padding: 100px 0;
@@ -351,7 +493,7 @@
         
         .venue-card {
             background: #ffffff;
-            padding: 40px 30px;
+            padding: 50px 40px;
             border: 1px solid #f0f0f0;
             text-align: center;
             margin-bottom: 50px;
@@ -360,7 +502,7 @@
         .venue-name {
             font-family: 'EB Garamond', 'Georgia', serif;
             font-style: italic;
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: #1e1e1e;
             margin-bottom: 15px;
             font-weight: 400;
@@ -396,12 +538,6 @@
             filter: grayscale(50%);
         }
         
-        @media (max-width: 768px) {
-            .map-container iframe {
-                height: 250px;
-            }
-        }
-        
         .map-buttons {
             display: flex;
             gap: 15px;
@@ -432,19 +568,7 @@
             color: white;
         }
         
-        @media (max-width: 480px) {
-            .map-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .map-btn {
-                width: 100%;
-                justify-content: center;
-                padding: 12px 20px;
-            }
-        }
-        
-        /* ⭐⭐⭐ ФОРМА - ПОЛНОСТЬЮ АДАПТИРОВАНА ДЛЯ ТЕЛЕФОНА ⭐⭐⭐ */
+        /* ⭐⭐⭐ ФОРМА - APPS SCRIPT ⭐⭐⭐ */
         .form-section {
             background: #faf9f7;
             padding: 100px 0;
@@ -456,20 +580,6 @@
             background: #ffffff;
             padding: 60px 50px;
             border: 1px solid #f0f0f0;
-        }
-        
-        @media (max-width: 768px) {
-            .form-container {
-                padding: 40px 30px;
-                margin: 0 20px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .form-container {
-                padding: 35px 25px;
-                margin: 0 15px;
-            }
         }
         
         .form-group {
@@ -498,9 +608,6 @@
             font-size: 1rem;
             transition: all 0.2s;
             background: transparent;
-            border-radius: 0;
-            -webkit-appearance: none;
-            appearance: none;
         }
         
         .form-group input:focus,
@@ -510,54 +617,21 @@
             outline: none;
         }
         
-        /* ⭐⭐⭐ ЧЕКБОКСЫ - ПОЛНОСТЬЮ ПЕРЕРАБОТАНЫ ДЛЯ МОБИЛЬНЫХ ⭐⭐⭐ */
         .checkbox-group {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 10px;
+            gap: 25px;
+            margin-top: 15px;
         }
         
-        /* Стили для ПК - горизонтально */
-        @media (min-width: 769px) {
-            .checkbox-group {
-                gap: 25px;
-            }
-            .checkbox-label {
-                flex: 0 1 auto;
-            }
-        }
-        
-        /* Стили для планшетов */
-        @media (max-width: 768px) {
-            .checkbox-group {
-                gap: 15px;
-            }
-        }
-        
-        /* ⭐⭐⭐ ГЛАВНОЕ ИСПРАВЛЕНИЕ ДЛЯ ТЕЛЕФОНОВ - ВЕРТИКАЛЬНОЕ РАСПОЛОЖЕНИЕ ⭐⭐⭐ */
         @media (max-width: 600px) {
             .checkbox-group {
                 flex-direction: column;
                 gap: 12px;
-                width: 100%;
-            }
-            
-            .checkbox-label {
-                width: 100%;
-                padding: 10px 0;
-                display: flex;
-                align-items: center;
-                border-bottom: 1px solid #f0f0f0;
-            }
-            
-            .checkbox-label:last-child {
-                border-bottom: none;
             }
         }
         
-        /* Базовые стили чекбоксов для всех устройств */
         .checkbox-label {
             font-family: 'Cardo', 'Georgia', serif;
             display: inline-flex;
@@ -566,40 +640,17 @@
             cursor: pointer;
             font-size: 1rem;
             color: #4a4a4a;
-            padding: 5px 0;
-            position: relative;
-            -webkit-tap-highlight-color: transparent;
         }
         
-        /* Кастомные чекбоксы - большие для мобильных */
         .checkbox-label input[type="checkbox"] {
             width: 18px;
             height: 18px;
             margin: 0;
-            padding: 0;
             border: 1px solid #c0c0c0;
-            border-radius: 3px;
             background: white;
-            cursor: pointer;
             -webkit-appearance: none;
             appearance: none;
             position: relative;
-            transition: all 0.2s;
-            flex-shrink: 0;
-        }
-        
-        /* Увеличиваем чекбоксы для мобильных */
-        @media (max-width: 600px) {
-            .checkbox-label input[type="checkbox"] {
-                width: 24px;
-                height: 24px;
-                border-width: 1.5px;
-            }
-            
-            .checkbox-label {
-                font-size: 1.1rem;
-                gap: 15px;
-            }
         }
         
         .checkbox-label input[type="checkbox"]:checked {
@@ -615,21 +666,15 @@
             transform: translate(-50%, -50%);
             color: white;
             font-size: 12px;
-            font-weight: bold;
         }
         
         @media (max-width: 600px) {
-            .checkbox-label input[type="checkbox"]:checked::after {
-                font-size: 16px;
+            .checkbox-label input[type="checkbox"] {
+                width: 24px;
+                height: 24px;
             }
         }
         
-        .checkbox-label input[type="checkbox"]:focus {
-            outline: none;
-            border-color: #b5a37e;
-        }
-        
-        /* Кнопка отправки */
         .submit-btn {
             font-family: 'Inter', 'Arial', sans-serif;
             width: 100%;
@@ -644,8 +689,6 @@
             font-weight: 400;
             letter-spacing: 3px;
             text-transform: uppercase;
-            -webkit-appearance: none;
-            appearance: none;
         }
         
         .submit-btn:hover {
@@ -653,14 +696,7 @@
             color: white;
         }
         
-        @media (max-width: 600px) {
-            .submit-btn {
-                padding: 18px 30px;
-                font-size: 1rem;
-            }
-        }
-        
-        /* ⭐⭐⭐ КОНТАКТЫ ⭐⭐⭐ */
+        /* ⭐⭐⭐ КОНТАКТЫ - WHATSAPP ⭐⭐⭐ */
         .contact-section {
             background: #ffffff;
             padding: 100px 0;
@@ -678,10 +714,11 @@
             text-align: center;
             flex: 0 1 280px;
             padding: 30px 20px;
+            border: 1px solid #f0f0f0;
         }
         
         .contact-icon {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #b5a37e;
             margin-bottom: 20px;
         }
@@ -700,7 +737,6 @@
             color: #8a8a8a;
             font-size: 0.75rem;
             margin-bottom: 15px;
-            font-weight: 400;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
@@ -710,7 +746,6 @@
             font-size: 1.2rem;
             color: #1e1e1e;
             margin-bottom: 20px;
-            font-weight: 400;
         }
         
         .contact-btn-wa {
@@ -721,7 +756,6 @@
             color: #1e1e1e;
             text-decoration: none;
             border: 1px solid #1e1e1e;
-            font-weight: 400;
             transition: all 0.2s;
             font-size: 0.8rem;
             letter-spacing: 2px;
@@ -733,21 +767,7 @@
             color: white;
         }
         
-        @media (max-width: 480px) {
-            .contact-grid {
-                gap: 30px;
-            }
-            .contact-card {
-                flex: 0 1 100%;
-                padding: 20px;
-            }
-            .contact-btn-wa {
-                width: 100%;
-                padding: 12px 20px;
-            }
-        }
-        
-        /* ⭐⭐⭐ ФУТЕР ⭐⭐⭐ */
+        /* ⭐⭐⭐ ФУТЕР - МИНИМАЛИЗМ ⭐⭐⭐ */
         .footer {
             background: #ffffff;
             color: #1e1e1e;
@@ -777,7 +797,7 @@
             font-size: 0.95rem;
         }
         
-        /* ⭐⭐⭐ МУЗЫКА ⭐⭐⭐ */
+        /* ⭐⭐⭐ МУЗЫКА - МИНИМАЛИЗМ ⭐⭐⭐ */
         .music-player {
             position: fixed;
             bottom: 30px;
@@ -800,8 +820,6 @@
             font-weight: 400;
             letter-spacing: 1px;
             backdrop-filter: blur(5px);
-            -webkit-appearance: none;
-            appearance: none;
         }
         
         .music-btn:hover {
@@ -809,59 +827,67 @@
             color: #b5a37e;
         }
         
-        @media (max-width: 600px) {
-            .music-player {
-                left: 20px;
-                right: 20px;
-                bottom: 20px;
-            }
-            .music-btn {
-                width: 100%;
-                justify-content: center;
-                padding: 15px 25px;
-                background: rgba(255,255,255,0.95);
-                border-width: 1px;
-            }
+        /* ⭐⭐⭐ АДАПТИВНОСТЬ ⭐⭐⭐ */
+        @media (max-width: 992px) {
+            html { font-size: 15px; }
+            .hero-names { font-size: 3.8rem; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
         
-        /* ⭐⭐⭐ ОБЩИЕ МОБИЛЬНЫЕ ИСПРАВЛЕНИЯ ⭐⭐⭐ */
         @media (max-width: 768px) {
-            html { font-size: 15px; }
+            html { font-size: 14px; }
             .hero-names { font-size: 3rem; }
             .hero-and { font-size: 2.2rem; }
             .hero-date { font-size: 1.3rem; }
-            .timer-number { font-size: 2.5rem; }
+            .timer-number { font-size: 2.2rem; }
             .timer-grid { gap: 25px; }
             .section-title { font-size: 1.8rem; }
-            .venue-name { font-size: 1.6rem; }
+            .venue-name { font-size: 1.8rem; }
+            .calendar-date { font-size: 2.8rem; }
             .section { padding: 70px 0; }
-            .timeline-section { padding: 70px 0; }
-            .venue-section { padding: 70px 0; }
-            .form-section { padding: 70px 0; }
-            .contact-section { padding: 70px 0; }
+        }
+        
+        @media (max-width: 600px) {
+            .hero-names {
+                font-size: 2.5rem;
+                flex-direction: column;
+                gap: 0;
+            }
+            .hero-names .name-part {
+                white-space: normal;
+                display: block;
+                width: 100%;
+            }
+            .hero-and {
+                display: block;
+                margin: 5px 0;
+            }
         }
         
         @media (max-width: 480px) {
-            html { font-size: 14px; }
-            .hero-names { font-size: 2.4rem; }
-            .hero-and { font-size: 1.8rem; }
-            .timer-number { font-size: 2rem; }
-            .timer-grid { gap: 15px; }
-            .timer-item { min-width: 65px; }
-            .section-title { font-size: 1.6rem; }
-            .section { padding: 60px 0; }
-            .timeline-section { padding: 60px 0; }
-            .venue-section { padding: 60px 0; }
-            .form-section { padding: 60px 0; }
-            .contact-section { padding: 60px 0; }
-        }
-        
-        @media (max-width: 360px) {
             html { font-size: 13px; }
-            .hero-names { font-size: 2rem; }
-            .hero-and { font-size: 1.5rem; }
-            .timer-number { font-size: 1.6rem; }
-            .timer-item { min-width: 55px; }
+            .hero-names { font-size: 2.2rem; }
+            .hero-and { font-size: 1.6rem; }
+            .timer-number { font-size: 1.8rem; }
+            .timer-item { min-width: 65px; }
+            .timer-grid { gap: 15px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item { height: 200px; }
+            .timeline-item { flex-direction: column; }
+            .timeline-time { 
+                min-width: auto; 
+                margin-bottom: 5px; 
+                padding-right: 0;
+            }
+            .dresscode-grid { gap: 30px; }
+            .calendar-container { padding: 30px 20px; }
+            .calendar-date { font-size: 2.5rem; }
+            .map-buttons { flex-direction: column; }
+            .map-btn { justify-content: center; }
+            .form-container { padding: 40px 30px; }
+            .contact-grid { gap: 30px; }
+            .music-player { left: 20px; right: 20px; bottom: 20px; }
+            .music-btn { width: 100%; justify-content: center; }
         }
         
         h1, h2, h3, p, div, span, a {
@@ -875,14 +901,19 @@
     </style>
 </head>
 <body>
-    <!-- ГЕРОЙ -->
+    <!-- ⭐⭐⭐ ГЕРОЙ ⭐⭐⭐ -->
     <section class="hero">
         <div class="hero-content fade-in">
-            <div class="hero-pre">СВАДЕБНОЕ ПРИГЛАШЕНИЕ</div>
+            <div class="hero-pre">ҮЙЛЕНУ ТОЙЫ</div>
+            
             <h1 class="hero-names">
-                Айбек <span class="hero-and">&</span> Айгерим
+                <span class="name-part">ТИЛЯПЖАН</span>
+                <span class="hero-and">&</span>
+                <span class="name-part">САХИДЯМ</span>
             </h1>
-            <div class="hero-date">26 июня 2026</div>
+            
+            <div class="hero-date">15 ЖЕЛТОҚСАН 2026</div>
+            
             <div class="hero-divider"></div>
             
             <!-- ТАЙМЕР -->
@@ -890,11 +921,11 @@
                 <div class="timer-grid">
                     <div class="timer-item">
                         <div class="timer-number" id="days">00</div>
-                        <div class="timer-label">ДНЕЙ</div>
+                        <div class="timer-label">КҮН</div>
                     </div>
                     <div class="timer-item">
                         <div class="timer-number" id="hours">00</div>
-                        <div class="timer-label">ЧАСОВ</div>
+                        <div class="timer-label">САҒАТ</div>
                     </div>
                     <div class="timer-item">
                         <div class="timer-number" id="minutes">00</div>
@@ -906,10 +937,15 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="location-badge">
+                <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
+                Астана, ресторан «Дәстүрлік» • 18:00
+            </div>
         </div>
     </section>
     
-    <!-- ГАЛЕРЕЯ -->
+    <!-- ⭐⭐⭐ ГАЛЕРЕЯ ⭐⭐⭐ -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Наши моменты</h2>
@@ -924,7 +960,7 @@
         </div>
     </section>
     
-    <!-- ПРОГРАММА -->
+    <!-- ⭐⭐⭐ ПРОГРАММА ДНЯ - ОБНОВЛЕННАЯ ⭐⭐⭐ -->
     <section class="timeline-section">
         <div class="container">
             <h2 class="section-title">Программа дня</h2>
@@ -936,42 +972,145 @@
                     <div class="timeline-time">18:00</div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Сбор гостей</h3>
-                        <div class="timeline-desc">Фуршет, живая музыка, фотосессия</div>
+                        <div class="timeline-desc">Фуршет, встреча молодоженов</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">18:30</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Фотосессия</h3>
+                        <div class="timeline-desc">Совместные фотографии с гостями</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">19:00</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Торжественная церемония</h3>
-                        <div class="timeline-desc">Встреча молодоженов, беташар</div>
+                        <h3 class="timeline-title">Начало</h3>
+                        <div class="timeline-desc">Торжественная церемония, беташар</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">20:00</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Свадебный ужин</h3>
-                        <div class="timeline-desc">Банкет, тосты, конкурсы</div>
+                        <h3 class="timeline-title">Шоу программа</h3>
+                        <div class="timeline-desc">Конкурсы, выступления артистов</div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-time">22:00</div>
+                    <div class="timeline-time">22:30</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Танцевальная программа</h3>
-                        <div class="timeline-desc">Первый танец, дискотека</div>
+                        <h3 class="timeline-title">Танец жениха и невесты</h3>
+                        <div class="timeline-desc">Первый совместный танец</div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-time">00:00</div>
+                    <div class="timeline-time">23:00</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Завершение вечера</h3>
-                        <div class="timeline-desc">Прощальный танец</div>
+                        <h3 class="timeline-title">Торжественный торт</h3>
+                        <div class="timeline-desc">Разрезание свадебного торта</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- МЕСТО -->
+    <!-- ⭐⭐⭐ КАЛЕНДАРЬ - НОВЫЙ БЛОК ⭐⭐⭐ -->
+    <section class="calendar-section">
+        <div class="container">
+            <h2 class="section-title">Құтты шаңырақ</h2>
+            <div class="section-subtitle">WEDDING DAY</div>
+            <div class="section-divider"></div>
+            
+            <div class="calendar-container">
+                <div class="calendar-title">БОЛУҒА ШАҚЫРАМЫЗ!</div>
+                <div class="calendar-date">15</div>
+                <div class="calendar-month">ЖЕЛТОҚСАН 2026</div>
+                
+                <div class="calendar-weekdays">
+                    <div>Дс</div>
+                    <div>Сс</div>
+                    <div>Ср</div>
+                    <div>Бс</div>
+                    <div>Жм</div>
+                    <div>Сн</div>
+                    <div>Жб</div>
+                </div>
+                
+                <div class="calendar-days">
+                    <div class="calendar-day"></div>
+                    <div class="calendar-day">01</div>
+                    <div class="calendar-day">02</div>
+                    <div class="calendar-day">03</div>
+                    <div class="calendar-day">04</div>
+                    <div class="calendar-day">05</div>
+                    <div class="calendar-day">06</div>
+                    <div class="calendar-day">07</div>
+                    <div class="calendar-day">08</div>
+                    <div class="calendar-day">09</div>
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day">12</div>
+                    <div class="calendar-day">13</div>
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day highlight">15</div>
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day">20</div>
+                    <div class="calendar-day">21</div>
+                    <div class="calendar-day">22</div>
+                    <div class="calendar-day">23</div>
+                    <div class="calendar-day">24</div>
+                    <div class="calendar-day">25</div>
+                    <div class="calendar-day">26</div>
+                    <div class="calendar-day">27</div>
+                    <div class="calendar-day">28</div>
+                    <div class="calendar-day">29</div>
+                    <div class="calendar-day">30</div>
+                    <div class="calendar-day">31</div>
+                </div>
+                
+                <div class="calendar-time">
+                    <p><strong>Беташар:</strong> 18:00</p>
+                    <p><strong>Той:</strong> 19:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ⭐⭐⭐ ДРЕСС-КОД - НОВЫЙ БЛОК ⭐⭐⭐ -->
+    <section class="dresscode-section">
+        <div class="container">
+            <h2 class="section-title">Дресс-код</h2>
+            <div class="section-subtitle">DRESS CODE</div>
+            <div class="section-divider"></div>
+            
+            <div class="dresscode-grid">
+                <div class="dresscode-item">
+                    <div class="dresscode-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Мужчины</h3>
+                    <p>КЛАССИЧЕСКИЙ<br>КОСТЮМ</p>
+                </div>
+                
+                <div class="dresscode-item">
+                    <div class="dresscode-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Дамы</h3>
+                    <p>ВЕЧЕРНИЕ<br>ПЛАТЬЯ</p>
+                </div>
+            </div>
+            
+            <div class="dresscode-note">
+                <p>Нам будет очень приятно, если вы поддержите<br>стиль торжества в своих нарядах</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - ПРЕЖНЕЕ (Астана) ⭐⭐⭐ -->
     <section class="venue-section">
         <div class="container">
             <h2 class="section-title">Место проведения</h2>
@@ -979,7 +1118,7 @@
             <div class="section-divider"></div>
             
             <div class="venue-card">
-                <div class="venue-name">Ресторан «Дәстүрлік»</div>
+                <div class="venue-name">РЕСТОРАН «ДӘСТҮРЛІК»</div>
                 <div class="venue-address">г. Астана, пр. Тауелсиздик, 15</div>
                 <div class="venue-time">НАЧАЛО В 18:00</div>
             </div>
@@ -1002,7 +1141,7 @@
         </div>
     </section>
     
-    <!-- ⭐⭐⭐ ФОРМА - С ИСПРАВЛЕННЫМИ ЧЕКБОКСАМИ ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ ФОРМА - APPS SCRIPT ⭐⭐⭐ -->
     <section class="form-section">
         <div class="container">
             <h2 class="section-title">Подтвердите участие</h2>
@@ -1013,7 +1152,7 @@
                 <form id="rsvpForm">
                     <div class="form-group">
                         <label>Ваше имя и фамилия *</label>
-                        <input type="text" id="guestName" required placeholder="Иван Иванов">
+                        <input type="text" id="guestName" required placeholder="Иванов Иван">
                     </div>
                     
                     <div class="form-group">
@@ -1062,7 +1201,7 @@
         </div>
     </section>
     
-    <!-- КОНТАКТЫ -->
+    <!-- ⭐⭐⭐ КОНТАКТЫ - WHATSAPP ⭐⭐⭐ -->
     <section class="contact-section">
         <div class="container">
             <h2 class="section-title">Свяжитесь с нами</h2>
@@ -1075,10 +1214,10 @@
                     <div class="contact-icon">
                         <i class="fas fa-rings"></i>
                     </div>
-                    <h3>Айбек</h3>
+                    <h3>Тиляпжан</h3>
                     <div class="contact-role">ЖЕНИХ</div>
                     <div class="contact-phone-number">+7 (777) 111-22-33</div>
-                    <a href="https://wa.me/77771112233?text=Здравствуйте, Айбек! Подтверждаю участие на вашей свадьбе 26.06.2026" 
+                    <a href="https://wa.me/77771112233?text=Здравствуйте, Тиляпжан! Подтверждаю участие на вашей свадьбе 15.12.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
                         <i class="fab fa-whatsapp"></i> WhatsApp
@@ -1090,10 +1229,10 @@
                     <div class="contact-icon">
                         <i class="fas fa-rings"></i>
                     </div>
-                    <h3>Айгерим</h3>
+                    <h3>Сахидям</h3>
                     <div class="contact-role">НЕВЕСТА</div>
                     <div class="contact-phone-number">+7 (777) 444-55-66</div>
-                    <a href="https://wa.me/77774445566?text=Здравствуйте, Айгерим! Подтверждаю участие на вашей свадьбе 26.06.2026" 
+                    <a href="https://wa.me/77774445566?text=Здравствуйте, Сахидям! Подтверждаю участие на вашей свадьбе 15.12.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
                         <i class="fab fa-whatsapp"></i> WhatsApp
@@ -1103,17 +1242,16 @@
         </div>
     </section>
     
-    <!-- ФУТЕР -->
+    <!-- ⭐⭐⭐ ФУТЕР ⭐⭐⭐ -->
     <footer class="footer">
         <div class="footer-names">
-            Айбек <span class="footer-heart">✦</span> Айгерим
+            Тиляпжан <span class="footer-heart">✦</span> Сахидям
         </div>
-        <p>26 июня 2026 • Астана</p>
-        <p style="margin-top: 30px; font-size: 0.9rem;">С нетерпением ждем вас</p>
-        <p style="margin-top: 10px; font-style: italic; color: #b5a37e;">две души, одно сердце</p>
+        <p>15 желтоқсан 2026 • Астана</p>
+        <p style="margin-top: 30px; font-style: italic; color: #b5a37e;">Рамиль & Асия</p>
     </footer>
     
-    <!-- МУЗЫКА -->
+    <!-- ⭐⭐⭐ МУЗЫКА ⭐⭐⭐ -->
     <div class="music-player">
         <button class="music-btn" id="musicToggle">
             <i class="fas fa-music"></i>
@@ -1130,7 +1268,7 @@
         
         // Таймер
         function updateTimer() {
-            const weddingDate = new Date('2026-06-26T18:00:00').getTime();
+            const weddingDate = new Date('2026-12-15T18:00:00').getTime();
             const now = new Date().getTime();
             const distance = weddingDate - now;
             
@@ -1193,7 +1331,7 @@
                 guests: document.getElementById('guestCount').value,
                 diet: diet.join(', '),
                 message: document.getElementById('guestMessage').value,
-                wedding: 'Айбек и Айгерим - 26.06.2026'
+                wedding: 'Тиляпжан и Сахидям - 15.12.2026'
             };
             
             submitBtn.innerHTML = 'Отправка...';
@@ -1211,7 +1349,7 @@
                     <div style="padding: 20px; border: 1px solid #e8e8e8;">
                         <p style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.3rem; color: #b5a37e; margin-bottom: 10px;">Спасибо, ${formData.name}!</p>
                         <p style="font-family: 'Cardo', serif; color: #6a6a6a;">Ваше подтверждение сохранено.</p>
-                        <p style="font-family: 'Cardo', serif; color: #6a6a6a; margin-top: 10px;">Ждем вас 26 июня 2026</p>
+                        <p style="font-family: 'Cardo', serif; color: #6a6a6a; margin-top: 10px;">Ждем вас 15 декабря 2026</p>
                     </div>
                 `;
                 
