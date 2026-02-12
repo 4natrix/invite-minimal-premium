@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Айбек & Айгерим | Премиум свадьба в Астане</title>
+    <title>Айбек & Айгерим | Свадьба в Астане</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -577,7 +577,7 @@
             <h1 class="hero-names animate" style="animation-delay: 0.2s;">
                 АЙБЕК <span class="hero-and">&</span> АЙГЕРИМ
             </h1>
-            <div class="hero-date animate" style="animation-delay: 0.4s;">25 ИЮНЯ 2025</div>
+            <div class="hero-date animate" style="animation-delay: 0.4s;">26 ИЮНЯ 2026</div>
             
             <!-- Таймер -->
             <div class="timer-premium animate" style="animation-delay: 0.6s;">
@@ -758,33 +758,6 @@
         </div>
     </section>
     
-    <!-- Статистика гостей -->
-    <section class="stats-section">
-        <div class="container">
-            <h2 class="section-title">НАШИ ГОСТИ</h2>
-            <div class="section-divider"></div>
-            
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" id="statTotal">124</div>
-                    <div class="stat-label">ПРИГЛАШЕНО</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="statConfirmed">89</div>
-                    <div class="stat-label">ПОДТВЕРДИЛИ</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="statWaiting">35</div>
-                    <div class="stat-label">ОЖИДАЕМ</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="statVegetarian">12</div>
-                    <div class="stat-label">ОСОБОЕ МЕНЮ</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <!-- КОНТАКТЫ WhatsApp/Telegram -->
     <section class="contact-premium">
         <div class="container">
@@ -798,7 +771,7 @@
                         <i class="fab fa-whatsapp"></i>
                     </div>
                     <h3>WhatsApp</h3>
-                    <p>Быстрая связь по любым вопросам</p>
+                    <p>Быстрая связь с молодоженами</p>
                     <a href="https://wa.me/77771234567?text=Здравствуйте! Подтверждаю участие на свадьбе Айбека и Айгерим" 
                        target="_blank" 
                        class="contact-btn contact-btn-wa">
@@ -806,20 +779,6 @@
                     </a>
                 </div>
                 
-                <!-- Telegram -->
-                <div class="contact-card">
-                    <div class="contact-icon telegram-icon">
-                        <i class="fab fa-telegram-plane"></i>
-                    </div>
-                    <h3>Telegram</h3>
-                    <p>Оперативные ответы на ваши вопросы</p>
-                    <a href="https://t.me/wedding_organizer" 
-                       target="_blank" 
-                       class="contact-btn contact-btn-tg">
-                        <i class="fab fa-telegram-plane"></i> Написать в Telegram
-                    </a>
-                </div>
-            </div>
             
             <div style="text-align: center; margin-top: 30px; color: #5d6d7e;">
                 <p>Или позвоните: <a href="tel:+77771234567" style="color: #d4af37; text-decoration: none; font-weight: 500;">+7 (777) 123-45-67</a> (Айгуль)</p>
@@ -853,7 +812,7 @@
         
         // Таймер
         function updateTimer() {
-            const weddingDate = new Date('2025-06-25T18:00:00').getTime();
+            const weddingDate = new Date('2026-06-26T18:00:00').getTime();
             const now = new Date().getTime();
             const distance = weddingDate - now;
             
@@ -899,7 +858,7 @@
                 guests: document.getElementById('guestCount').value,
                 diet: diet.join(', '),
                 message: document.getElementById('guestMessage').value,
-                wedding: 'Айбек и Айгерим - 25.06.2025',
+                wedding: 'Айбек и Айгерим - 26.06.2026',
                 timestamp: new Date().toISOString()
             };
             
