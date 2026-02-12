@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Айбек & Айгерим | Свадьба в Астане</title>
+    <title>Айбек & Айгерим | Премиум свадьба в Астане</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -32,23 +32,16 @@
             width: 100%;
         }
         
-        /* Анимации */
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         .animate {
             animation: fadeInUp 1s ease-out;
         }
         
-        /* Герой секция */
+        /* Герой */
         .hero {
             min-height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -61,7 +54,6 @@
             justify-content: center;
             text-align: center;
             color: white;
-            position: relative;
             width: 100%;
         }
         
@@ -69,19 +61,18 @@
             max-width: 1000px;
             padding: 20px;
             width: 100%;
-            z-index: 2;
         }
         
         .hero-pre {
             font-size: 0.9rem;
-            letter-spacing: 5px;
+            letter-spacing: 6px;
             margin-bottom: 20px;
             color: rgba(255,255,255,0.9);
             text-transform: uppercase;
         }
         
         .hero-names {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             font-weight: 400;
             letter-spacing: 4px;
             margin-bottom: 20px;
@@ -92,11 +83,11 @@
         .hero-and {
             font-size: 2.5rem;
             color: #d4af37;
-            margin: 0 10px;
+            margin: 0 15px;
         }
         
         .hero-date {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 300;
             margin-bottom: 40px;
             letter-spacing: 3px;
@@ -104,7 +95,7 @@
         
         /* Таймер */
         .timer-premium {
-            background: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.5);
             backdrop-filter: blur(10px);
             padding: 30px 20px;
             border-radius: 20px;
@@ -118,17 +109,17 @@
         .timer-premium-grid {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 40px;
             flex-wrap: wrap;
         }
         
         .timer-premium-item {
             text-align: center;
-            min-width: 70px;
+            min-width: 80px;
         }
         
         .timer-premium-number {
-            font-size: 2.8rem;
+            font-size: 3rem;
             font-weight: 300;
             line-height: 1;
             color: white;
@@ -144,23 +135,22 @@
         
         /* Секции */
         .section {
-            padding: 70px 0;
+            padding: 80px 0;
         }
         
         .section-title {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             font-weight: 300;
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #2c3e4f;
-            line-height: 1.2;
         }
         
         .section-divider {
-            width: 60px;
+            width: 80px;
             height: 2px;
             background: #d4af37;
-            margin: 0 auto 40px;
+            margin: 0 auto 50px;
         }
         
         /* Галерея */
@@ -175,62 +165,55 @@
             height: 250px;
             background-size: cover;
             background-position: center;
-            border-radius: 10px;
+            border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s;
         }
         
         .gallery-item:hover {
-            transform: scale(1.02);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            transform: scale(1.03);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
         
         /* Программа */
         .timeline {
             max-width: 700px;
             margin: 40px auto;
-            position: relative;
         }
         
         .timeline-item {
             display: flex;
             margin-bottom: 35px;
-            position: relative;
             flex-wrap: wrap;
         }
         
         .timeline-time {
             min-width: 100px;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: #d4af37;
             font-weight: 300;
             padding-right: 20px;
         }
         
-        .timeline-content {
-            flex: 1;
-        }
-        
         .timeline-title {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 5px;
             color: #2c3e4f;
         }
         
         .timeline-desc {
             color: #5d6d7e;
-            font-size: 0.95rem;
         }
         
         /* Место проведения */
         .venue-premium {
             background: #fcf9f7;
-            padding: 70px 0;
+            padding: 80px 0;
         }
         
         .venue-card-premium {
             background: white;
-            padding: 40px 30px;
+            padding: 50px 30px;
             border-radius: 20px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.03);
             text-align: center;
@@ -238,57 +221,50 @@
         }
         
         .venue-name-premium {
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: #2c3e4f;
             margin-bottom: 10px;
         }
         
         .venue-address-premium {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: #5d6d7e;
             margin-bottom: 15px;
         }
         
         /* Карта */
         .map-premium {
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
             margin: 30px 0;
-            position: relative;
-            width: 100%;
         }
         
         .map-premium iframe {
             width: 100%;
-            height: 350px;
+            height: 400px;
             border: 0;
-            display: block;
         }
         
-        /* Кнопки карт */
         .map-buttons-premium {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
-            margin: 25px 0;
+            margin: 30px 0;
             flex-wrap: wrap;
         }
         
         .map-btn-premium {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 12px 25px;
+            gap: 10px;
+            padding: 12px 30px;
             background: white;
             border: 1px solid #e0e0e0;
             border-radius: 50px;
             text-decoration: none;
             color: #2c3e4f;
             transition: all 0.3s;
-            font-size: 0.95rem;
-            flex: 0 1 auto;
         }
         
         .map-btn-premium:hover {
@@ -297,19 +273,19 @@
             color: white;
         }
         
-        /* Форма RSVP */
+        /* Форма */
         .rsvp-premium {
             background: white;
-            padding: 70px 0;
+            padding: 80px 0;
         }
         
         .form-premium {
             max-width: 600px;
             margin: 0 auto;
             background: white;
-            padding: 40px 30px;
+            padding: 50px 40px;
             border-radius: 20px;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.05);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
             border: 1px solid #f0f0f0;
         }
         
@@ -321,7 +297,6 @@
             display: block;
             margin-bottom: 8px;
             color: #2c3e4f;
-            font-size: 0.95rem;
             font-weight: 500;
         }
         
@@ -329,14 +304,20 @@
         .form-group select,
         .form-group textarea {
             width: 100%;
-            padding: 14px 18px;
+            padding: 15px 20px;
             border: 1px solid #e0e0e0;
-            border-radius: 10px;
+            border-radius: 12px;
             font-size: 1rem;
             transition: all 0.3s;
             font-family: inherit;
-            -webkit-appearance: none;
-            appearance: none;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #d4af37;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(212,175,55,0.1);
         }
         
         .checkbox-group {
@@ -351,226 +332,169 @@
             align-items: center;
             gap: 8px;
             cursor: pointer;
-            font-size: 0.95rem;
         }
         
         .submit-btn-premium {
             width: 100%;
-            padding: 16px 25px;
+            padding: 18px 30px;
             background: #d4af37;
             color: white;
             border: none;
-            border-radius: 10px;
-            font-size: 1.1rem;
+            border-radius: 12px;
+            font-size: 1.2rem;
             cursor: pointer;
             transition: all 0.3s;
-            margin-top: 15px;
+            margin-top: 20px;
             font-weight: 500;
-            -webkit-appearance: none;
-            appearance: none;
         }
         
         .submit-btn-premium:hover {
             background: #c4a032;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(212,175,55,0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(212,175,55,0.25);
         }
         
-        /* Статистика */
-        .stats-section {
-            background: #fcf9f7;
-            padding: 70px 0;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-            margin-top: 30px;
-        }
-        
-        .stat-item {
-            background: white;
-            padding: 30px 15px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.02);
-        }
-        
-        .stat-number {
-            font-size: 2.8rem;
-            font-weight: 300;
-            color: #d4af37;
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-        
-        .stat-label {
-            color: #5d6d7e;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        /* Контакты WhatsApp/Telegram */
+        /* КОНТАКТЫ - WhatsApp жениха и невесты */
         .contact-premium {
-            background: white;
-            padding: 60px 0;
+            background: #fcf9f7;
+            padding: 80px 0;
         }
         
         .contact-grid {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 40px;
             margin-top: 30px;
             flex-wrap: wrap;
         }
         
         .contact-card {
-            background: #fcf9f7;
-            padding: 35px 25px;
+            background: white;
+            padding: 40px 30px;
             border-radius: 20px;
             text-align: center;
-            min-width: 250px;
-            flex: 0 1 280px;
+            flex: 0 1 320px;
             transition: all 0.3s;
             border: 1px solid #f0e7e0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
         }
         
         .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
             border-color: #d4af37;
         }
         
         .contact-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
         }
         
         .whatsapp-icon {
             color: #25D366;
         }
         
-        .telegram-icon {
-            color: #27A7E7;
-        }
-        
         .contact-card h3 {
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             margin-bottom: 10px;
             color: #2c3e4f;
         }
         
-        .contact-card p {
-            color: #5d6d7e;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
+        .contact-role {
+            color: #d4af37;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-weight: 500;
         }
         
-        .contact-btn {
+        .contact-phone-number {
+            font-size: 1.3rem;
+            color: #2c3e4f;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .contact-btn-wa {
             display: inline-block;
-            padding: 12px 30px;
-            background: #d4af37;
+            padding: 14px 35px;
+            background: #25D366;
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 500;
             transition: all 0.3s;
-            border: none;
-            font-size: 0.95rem;
-        }
-        
-        .contact-btn:hover {
-            background: #c4a032;
-            transform: scale(1.05);
-        }
-        
-        .contact-btn-wa {
-            background: #25D366;
-        }
-        
-        .contact-btn-tg {
-            background: #27A7E7;
+            font-size: 1.1rem;
         }
         
         .contact-btn-wa:hover {
             background: #128C7E;
-        }
-        
-        .contact-btn-tg:hover {
-            background: #1E8BC3;
+            transform: scale(1.05);
         }
         
         /* Футер */
         .footer-premium {
             background: #1e2b36;
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         
         .footer-names-premium {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 15px;
             font-weight: 300;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
         }
         
         .footer-heart {
             color: #d4af37;
-            margin: 0 8px;
+            margin: 0 10px;
         }
         
-        /* ========== АДАПТИВНОСТЬ ========== */
+        /* Адаптивность */
         @media (max-width: 992px) {
             html { font-size: 15px; }
             .hero-names { font-size: 3rem; }
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
         }
         
         @media (max-width: 768px) {
             html { font-size: 14px; }
-            .hero-names { font-size: 2.2rem; }
+            .hero-names { font-size: 2.5rem; }
             .hero-and { font-size: 1.8rem; }
-            .timer-premium-number { font-size: 2rem; }
-            .venue-name-premium { font-size: 1.6rem; }
-            .map-premium iframe { height: 280px; }
-            .map-buttons-premium { gap: 10px; }
-            .map-btn-premium { padding: 10px 18px; font-size: 0.85rem; }
-            .form-premium { padding: 30px 20px; }
-            .stats-grid { gap: 15px; }
-            .stat-number { font-size: 2.2rem; }
-            .contact-card { min-width: 100%; }
+            .hero-date { font-size: 1.4rem; }
+            .timer-premium-number { font-size: 2.2rem; }
+            .timer-premium-grid { gap: 20px; }
+            .section-title { font-size: 2rem; }
+            .venue-name-premium { font-size: 1.8rem; }
+            .map-premium iframe { height: 300px; }
+            .form-premium { padding: 35px 25px; }
+            .contact-card { flex: 0 1 100%; }
         }
         
         @media (max-width: 480px) {
             html { font-size: 13px; }
-            .hero-names { font-size: 1.8rem; }
-            .timer-premium-number { font-size: 1.6rem; }
+            .hero-names { font-size: 2rem; }
+            .timer-premium-number { font-size: 1.8rem; }
+            .timer-premium-item { min-width: 70px; }
             .gallery-grid { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: 1fr; }
             .timeline-item { flex-direction: column; }
             .timeline-time { margin-bottom: 8px; }
             .map-buttons-premium { flex-direction: column; }
+            .map-btn-premium { justify-content: center; }
             .checkbox-group { flex-direction: column; }
+            .contact-card { padding: 30px 20px; }
+            .contact-phone-number { font-size: 1.1rem; }
         }
         
         h1, h2, h3, p, div, span, a {
             word-wrap: break-word;
             overflow-wrap: break-word;
-            hyphens: auto;
-        }
-        
-        img, iframe {
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
 <body>
-    <!-- Герой секция -->
+    <!-- Герой -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-pre animate">ДОРОГИЕ ГОСТИ!</div>
@@ -608,7 +532,6 @@
         <div class="container">
             <h2 class="section-title">НАШИ МОМЕНТЫ</h2>
             <div class="section-divider"></div>
-            
             <div class="gallery-grid">
                 <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=500');"></div>
                 <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=500');"></div>
@@ -618,8 +541,8 @@
         </div>
     </section>
     
-    <!-- Программа дня -->
-    <section style="background: #fcf9f7; padding: 70px 0;">
+    <!-- Программа -->
+    <section style="background: #fcf9f7; padding: 80px 0;">
         <div class="container">
             <h2 class="section-title">ПРОГРАММА ДНЯ</h2>
             <div class="section-divider"></div>
@@ -627,37 +550,37 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-time">18:00</div>
-                    <div class="timeline-content">
+                    <div>
                         <h3 class="timeline-title">Сбор гостей</h3>
                         <div class="timeline-desc">Фуршет, живая музыка, фотосессия</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">19:00</div>
-                    <div class="timeline-content">
+                    <div>
                         <h3 class="timeline-title">Торжественная церемония</h3>
-                        <div class="timeline-desc">Встреча молодоженов, беташар, поздравления</div>
+                        <div class="timeline-desc">Встреча молодоженов, беташар</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">20:00</div>
-                    <div class="timeline-content">
+                    <div>
                         <h3 class="timeline-title">Свадебный ужин</h3>
                         <div class="timeline-desc">Банкет, тосты, конкурсы</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">22:00</div>
-                    <div class="timeline-content">
+                    <div>
                         <h3 class="timeline-title">Танцевальная программа</h3>
-                        <div class="timeline-desc">Первый танец, дискотека, караоке</div>
+                        <div class="timeline-desc">Первый танец, дискотека</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">00:00</div>
-                    <div class="timeline-content">
+                    <div>
                         <h3 class="timeline-title">Завершение вечера</h3>
-                        <div class="timeline-desc">Прощальный танец, проводы молодоженов</div>
+                        <div class="timeline-desc">Прощальный танец</div>
                     </div>
                 </div>
             </div>
@@ -673,18 +596,13 @@
             <div class="venue-card-premium">
                 <div class="venue-name-premium">РЕСТОРАН «ДӘСТҮРЛІК»</div>
                 <div class="venue-address-premium">г. Астана, пр. Тауелсиздик, 15</div>
-                <div style="color: #d4af37; font-size: 1.2rem; margin-top: 15px;">НАЧАЛО В 18:00</div>
+                <div style="color: #d4af37; font-size: 1.3rem;">НАЧАЛО В 18:00</div>
             </div>
             
-            <!-- Яндекс Карта -->
             <div class="map-premium">
-                <iframe 
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b8c8d8e8f8a8b8c8d8e8f8a8b8c8d8e8f8a8b&source=constructor"
-                    loading="lazy">
-                </iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b8c8d8e8f8a8b8c8d8e8f8a8b8c8d8e8f8a8b&source=constructor" loading="lazy"></iframe>
             </div>
             
-            <!-- Кнопки карт -->
             <div class="map-buttons-premium">
                 <a href="https://yandex.kz/maps/163/astana/?ll=71.430%2C51.160&z=17" target="_blank" class="map-btn-premium">
                     <i class="fas fa-map"></i> Яндекс Карты
@@ -699,7 +617,7 @@
         </div>
     </section>
     
-    <!-- ФОРМА RSVP - С ВАШЕЙ ССЫЛКОЙ -->
+    <!-- Форма RSVP -->
     <section class="rsvp-premium">
         <div class="container">
             <h2 class="section-title">ПОДТВЕРДИТЕ УЧАСТИЕ</h2>
@@ -738,7 +656,7 @@
                                 <input type="checkbox" name="diet" value="Халяльное"> Халяльное
                             </label>
                             <label class="checkbox-label">
-                                <input type="checkbox" name="diet" value="Есть аллергия"> Есть аллергия
+                                <input type="checkbox" name="diet" value="Аллергия"> Есть аллергия
                             </label>
                         </div>
                     </div>
@@ -758,30 +676,42 @@
         </div>
     </section>
     
-    <!-- КОНТАКТЫ WhatsApp/Telegram -->
+    <!-- WhatsApp жениха и невесты -->
     <section class="contact-premium">
         <div class="container">
             <h2 class="section-title">СВЯЖИТЕСЬ С НАМИ</h2>
             <div class="section-divider"></div>
             
             <div class="contact-grid">
-                <!-- WhatsApp -->
+                <!-- Жених -->
                 <div class="contact-card">
                     <div class="contact-icon whatsapp-icon">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <h3>WhatsApp</h3>
-                    <p>Быстрая связь с молодоженами</p>
-                    <a href="https://wa.me/77771234567?text=Здравствуйте! Подтверждаю участие на свадьбе Айбека и Айгерим" 
+                    <h3>Айбек</h3>
+                    <div class="contact-role">ЖЕНИХ</div>
+                    <div class="contact-phone-number">+7 (777) 111-22-33</div>
+                    <a href="https://wa.me/77771112233?text=Здравствуйте, Айбек! Подтверждаю участие на вашей свадьбе" 
                        target="_blank" 
-                       class="contact-btn contact-btn-wa">
-                        <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                       class="contact-btn-wa">
+                        <i class="fab fa-whatsapp"></i> Написать жениху
                     </a>
                 </div>
                 
-            
-            <div style="text-align: center; margin-top: 30px; color: #5d6d7e;">
-                <p>Или позвоните: <a href="tel:+77771234567" style="color: #d4af37; text-decoration: none; font-weight: 500;">+7 (777) 123-45-67</a> (Айгуль)</p>
+                <!-- Невеста -->
+                <div class="contact-card">
+                    <div class="contact-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Айгерим</h3>
+                    <div class="contact-role">НЕВЕСТА</div>
+                    <div class="contact-phone-number">+7 (777) 444-55-66</div>
+                    <a href="https://wa.me/77774445566?text=Здравствуйте, Айгерим! Подтверждаю участие на вашей свадьбе" 
+                       target="_blank" 
+                       class="contact-btn-wa">
+                        <i class="fab fa-whatsapp"></i> Написать невесте
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -791,11 +721,11 @@
         <div class="footer-names-premium">
             АЙБЕК <span class="footer-heart">❤</span> АЙГЕРИМ
         </div>
-        <div style="font-size: 1.1rem; margin-bottom: 25px; color: rgba(255,255,255,0.8);">
-            25 июня 2025 • Астана
+        <div style="font-size: 1.2rem; margin-bottom: 25px; color: rgba(255,255,255,0.8);">
+            26 июня 2026 • Астана
         </div>
-        <div style="max-width: 500px; margin: 0 auto; color: rgba(255,255,255,0.6);">
-            <p style="margin-bottom: 15px;">Спасибо, что разделите с нами этот особенный день!</p>
+        <div style="color: rgba(255,255,255,0.6);">
+            <p style="margin-bottom: 10px;">С нетерпением ждем вас!</p>
             <p style="font-style: italic;">«Две души, одно сердце»</p>
         </div>
     </footer>
@@ -805,9 +735,8 @@
         <source src="https://assets.mixkit.co/music/preview/mixkit-wedding-day-1263.mp3" type="audio/mpeg">
     </audio>
     
-    <!-- СКРИПТ С ВАШЕЙ ССЫЛКОЙ НА GOOGLE ТАБЛИЦУ ⬇️ -->
     <script>
-        // ✅ ВАША РАБОЧАЯ ССЫЛКА
+        // ВАША ССЫЛКА НА GOOGLE ТАБЛИЦУ
         const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzA5Lvs_qXa-0uJNsaN5oA9zFthLYIaMS389PUs5NbAxSB29NFDLkNIeqCDBukgK85bag/exec';
         
         // Таймер
@@ -815,14 +744,6 @@
             const weddingDate = new Date('2026-06-26T18:00:00').getTime();
             const now = new Date().getTime();
             const distance = weddingDate - now;
-            
-            if (distance < 0) {
-                document.getElementById('days').textContent = '00';
-                document.getElementById('hours').textContent = '00';
-                document.getElementById('minutes').textContent = '00';
-                document.getElementById('seconds').textContent = '00';
-                return;
-            }
             
             document.getElementById('days').textContent = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
             document.getElementById('hours').textContent = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
@@ -839,14 +760,13 @@
             music.play().catch(() => {});
         });
         
-        // ✅ ФОРМА - ОТПРАВКА В ВАШУ GOOGLE ТАБЛИЦУ
+        // Форма - отправка в Google Таблицу
         document.getElementById('rsvpForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const submitBtn = this.querySelector('.submit-btn-premium');
             const originalText = submitBtn.innerHTML;
             
-            // Собираем данные
             const diet = [];
             document.querySelectorAll('input[name="diet"]:checked').forEach(cb => {
                 diet.push(cb.value);
@@ -858,49 +778,36 @@
                 guests: document.getElementById('guestCount').value,
                 diet: diet.join(', '),
                 message: document.getElementById('guestMessage').value,
-                wedding: 'Айбек и Айгерим - 26.06.2026',
-                timestamp: new Date().toISOString()
+                wedding: 'Айбек и Айгерим - 26.06.2026'
             };
             
-            // Показываем загрузку
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
             submitBtn.disabled = true;
             
             try {
-                // ✅ ОТПРАВЛЯЕМ НА ВАШУ ССЫЛКУ
                 await fetch(GOOGLE_SCRIPT_URL, {
                     method: 'POST',
                     mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
+                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
                 
-                // Успех
                 document.getElementById('formResponse').innerHTML = `
-                    <div style="background: #e8f5e9; padding: 20px; border-radius: 15px; border-left: 5px solid #4caf50;">
+                    <div style="background: #e8f5e9; padding: 25px; border-radius: 15px; border-left: 5px solid #4caf50;">
                         <i class="fas fa-check-circle" style="color: #4caf50; font-size: 2rem; margin-bottom: 10px;"></i>
                         <h3 style="color: #2c3e4f; margin-bottom: 10px;">Спасибо, ${formData.name}!</h3>
-                        <p style="color: #5d6d7e;">Ваше подтверждение сохранено в таблице.</p>
-                        <p style="color: #5d6d7e; margin-top: 10px;">Ждем вас на свадьбе! 🎉</p>
+                        <p style="color: #5d6d7e;">Ваше подтверждение получено. Ждем вас!</p>
                     </div>
                 `;
                 
                 this.reset();
                 
-                // Обновляем статистику
-                const confirmed = parseInt(document.getElementById('statConfirmed').textContent) + 1;
-                document.getElementById('statConfirmed').textContent = confirmed;
-                document.getElementById('statWaiting').textContent = parseInt(document.getElementById('statWaiting').textContent) - 1;
-                
             } catch (error) {
-                // Ошибка
                 document.getElementById('formResponse').innerHTML = `
-                    <div style="background: #ffebee; padding: 20px; border-radius: 15px; border-left: 5px solid #f44336;">
+                    <div style="background: #ffebee; padding: 25px; border-radius: 15px; border-left: 5px solid #f44336;">
                         <i class="fas fa-exclamation-triangle" style="color: #f44336; font-size: 2rem; margin-bottom: 10px;"></i>
-                        <h3 style="color: #2c3e4f; margin-bottom: 10px;">Ошибка отправки</h3>
-                        <p style="color: #5d6d7e;">Пожалуйста, позвоните нам: +7 (777) 123-45-67</p>
+                        <h3 style="color: #2c3e4f; margin-bottom: 10px;">Ошибка</h3>
+                        <p style="color: #5d6d7e;">Позвоните нам: +7 (777) 123-45-67</p>
                     </div>
                 `;
             }
@@ -910,7 +817,7 @@
         });
         
         // Анимации
-        const animateElements = document.querySelectorAll('.gallery-item, .stat-item, .timeline-item, .venue-card-premium, .contact-card');
+        const animateElements = document.querySelectorAll('.gallery-item, .timeline-item, .venue-card-premium, .contact-card');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
