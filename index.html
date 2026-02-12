@@ -44,7 +44,7 @@
         /* Герой */
         .hero {
             min-height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
                         url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600');
             background-size: cover;
             background-position: center;
@@ -72,7 +72,7 @@
         }
         
         .hero-names {
-            font-size: 3.8rem;
+            font-size: 4rem;
             font-weight: 400;
             letter-spacing: 4px;
             margin-bottom: 20px;
@@ -81,13 +81,13 @@
         }
         
         .hero-and {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: #d4af37;
             margin: 0 15px;
         }
         
         .hero-date {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 300;
             margin-bottom: 40px;
             letter-spacing: 3px;
@@ -98,7 +98,7 @@
             background: rgba(0,0,0,0.5);
             backdrop-filter: blur(10px);
             padding: 30px 20px;
-            border-radius: 20px;
+            border-radius: 30px;
             border: 1px solid rgba(255,255,255,0.2);
             display: inline-block;
             width: 100%;
@@ -119,7 +119,7 @@
         }
         
         .timer-premium-number {
-            font-size: 3rem;
+            font-size: 3.2rem;
             font-weight: 300;
             line-height: 1;
             color: white;
@@ -203,6 +203,7 @@
         
         .timeline-desc {
             color: #5d6d7e;
+            font-size: 1rem;
         }
         
         /* Место проведения */
@@ -230,6 +231,12 @@
             font-size: 1.2rem;
             color: #5d6d7e;
             margin-bottom: 15px;
+        }
+        
+        .venue-time-premium {
+            color: #d4af37;
+            font-size: 1.3rem;
+            font-weight: 500;
         }
         
         /* Карта */
@@ -265,6 +272,7 @@
             text-decoration: none;
             color: #2c3e4f;
             transition: all 0.3s;
+            font-size: 0.95rem;
         }
         
         .map-btn-premium:hover {
@@ -273,7 +281,7 @@
             color: white;
         }
         
-        /* Форма */
+        /* ФОРМА - APPS SCRIPT */
         .rsvp-premium {
             background: white;
             padding: 80px 0;
@@ -298,6 +306,7 @@
             margin-bottom: 8px;
             color: #2c3e4f;
             font-weight: 500;
+            font-size: 1rem;
         }
         
         .form-group input,
@@ -310,6 +319,7 @@
             font-size: 1rem;
             transition: all 0.3s;
             font-family: inherit;
+            background: #fafafa;
         }
         
         .form-group input:focus,
@@ -318,6 +328,7 @@
             border-color: #d4af37;
             outline: none;
             box-shadow: 0 0 0 3px rgba(212,175,55,0.1);
+            background: white;
         }
         
         .checkbox-group {
@@ -332,6 +343,7 @@
             align-items: center;
             gap: 8px;
             cursor: pointer;
+            font-size: 0.95rem;
         }
         
         .submit-btn-premium {
@@ -340,7 +352,7 @@
             background: #d4af37;
             color: white;
             border: none;
-            border-radius: 12px;
+            border-radius: 50px;
             font-size: 1.2rem;
             cursor: pointer;
             transition: all 0.3s;
@@ -354,7 +366,7 @@
             box-shadow: 0 15px 30px rgba(212,175,55,0.25);
         }
         
-        /* КОНТАКТЫ - WhatsApp жениха и невесты */
+        /* WhatsApp контакты */
         .contact-premium {
             background: #fcf9f7;
             padding: 80px 0;
@@ -451,10 +463,39 @@
             margin: 0 10px;
         }
         
+        /* Музыка */
+        .music-player {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+        }
+        
+        .music-btn {
+            background: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #d4af37;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .music-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(212,175,55,0.25);
+        }
+        
         /* Адаптивность */
         @media (max-width: 992px) {
             html { font-size: 15px; }
-            .hero-names { font-size: 3rem; }
+            .hero-names { font-size: 3.2rem; }
+            .hero-and { font-size: 2.2rem; }
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
         
@@ -462,7 +503,7 @@
             html { font-size: 14px; }
             .hero-names { font-size: 2.5rem; }
             .hero-and { font-size: 1.8rem; }
-            .hero-date { font-size: 1.4rem; }
+            .hero-date { font-size: 1.5rem; }
             .timer-premium-number { font-size: 2.2rem; }
             .timer-premium-grid { gap: 20px; }
             .section-title { font-size: 2rem; }
@@ -470,26 +511,34 @@
             .map-premium iframe { height: 300px; }
             .form-premium { padding: 35px 25px; }
             .contact-card { flex: 0 1 100%; }
+            .music-player { bottom: 20px; right: 20px; }
         }
         
         @media (max-width: 480px) {
             html { font-size: 13px; }
             .hero-names { font-size: 2rem; }
+            .hero-and { font-size: 1.5rem; }
             .timer-premium-number { font-size: 1.8rem; }
             .timer-premium-item { min-width: 70px; }
             .gallery-grid { grid-template-columns: 1fr; }
             .timeline-item { flex-direction: column; }
-            .timeline-time { margin-bottom: 8px; }
+            .timeline-time { margin-bottom: 5px; }
             .map-buttons-premium { flex-direction: column; }
             .map-btn-premium { justify-content: center; }
             .checkbox-group { flex-direction: column; }
             .contact-card { padding: 30px 20px; }
             .contact-phone-number { font-size: 1.1rem; }
+            .music-player { left: 20px; right: 20px; }
+            .music-btn { width: 100%; justify-content: center; }
         }
         
         h1, h2, h3, p, div, span, a {
             word-wrap: break-word;
             overflow-wrap: break-word;
+        }
+        
+        iframe {
+            max-width: 100%;
         }
     </style>
 </head>
@@ -596,7 +645,7 @@
             <div class="venue-card-premium">
                 <div class="venue-name-premium">РЕСТОРАН «ДӘСТҮРЛІК»</div>
                 <div class="venue-address-premium">г. Астана, пр. Тауелсиздик, 15</div>
-                <div style="color: #d4af37; font-size: 1.3rem;">НАЧАЛО В 18:00</div>
+                <div class="venue-time-premium">НАЧАЛО В 18:00</div>
             </div>
             
             <div class="map-premium">
@@ -617,7 +666,7 @@
         </div>
     </section>
     
-    <!-- Форма RSVP -->
+    <!-- ФОРМА - APPS SCRIPT -->
     <section class="rsvp-premium">
         <div class="container">
             <h2 class="section-title">ПОДТВЕРДИТЕ УЧАСТИЕ</h2>
@@ -650,13 +699,13 @@
                         <label>Особые пожелания по питанию</label>
                         <div class="checkbox-group">
                             <label class="checkbox-label">
-                                <input type="checkbox" name="diet" value="Вегетарианское"> Вегетарианское
+                                <input type="checkbox" id="diet1" value="Вегетарианское"> Вегетарианское
                             </label>
                             <label class="checkbox-label">
-                                <input type="checkbox" name="diet" value="Халяльное"> Халяльное
+                                <input type="checkbox" id="diet2" value="Халяльное"> Халяльное
                             </label>
                             <label class="checkbox-label">
-                                <input type="checkbox" name="diet" value="Аллергия"> Есть аллергия
+                                <input type="checkbox" id="diet3" value="Аллергия"> Есть аллергия
                             </label>
                         </div>
                     </div>
@@ -691,7 +740,7 @@
                     <h3>Айбек</h3>
                     <div class="contact-role">ЖЕНИХ</div>
                     <div class="contact-phone-number">+7 (777) 111-22-33</div>
-                    <a href="https://wa.me/77771112233?text=Здравствуйте, Айбек! Подтверждаю участие на вашей свадьбе" 
+                    <a href="https://wa.me/77771112233?text=Здравствуйте, Айбек! Подтверждаю участие на вашей свадьбе 26.06.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
                         <i class="fab fa-whatsapp"></i> Написать жениху
@@ -706,7 +755,7 @@
                     <h3>Айгерим</h3>
                     <div class="contact-role">НЕВЕСТА</div>
                     <div class="contact-phone-number">+7 (777) 444-55-66</div>
-                    <a href="https://wa.me/77774445566?text=Здравствуйте, Айгерим! Подтверждаю участие на вашей свадьбе" 
+                    <a href="https://wa.me/77774445566?text=Здравствуйте, Айгерим! Подтверждаю участие на вашей свадьбе 26.06.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
                         <i class="fab fa-whatsapp"></i> Написать невесте
@@ -730,20 +779,34 @@
         </div>
     </footer>
     
-    <!-- Музыка -->
-    <audio id="bgMusic" loop>
-        <source src="https://assets.mixkit.co/music/659/659.mp3" type="audio/mpeg">
-    </audio>
+    <!-- Музыка - ВАША ССЫЛКА -->
+    <div class="music-player">
+        <button class="music-btn" id="musicToggle">
+            <i class="fas fa-music"></i>
+            <span>Включить музыку</span>
+        </button>
+        <audio id="bgMusic" loop preload="auto">
+            <source src="https://assets.mixkit.co/music/493/493.mp3" type="audio/mpeg">
+        </audio>
+    </div>
     
     <script>
-        // ВАША ССЫЛКА НА GOOGLE ТАБЛИЦУ
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwKMM9TL-p_lbh6a_9_0q7odnIi3m23gJXoRhYm6QoT5viec3iZ6hStoiGCyVN9w4IU/exec';
+        // ✅ ВСТАВЬТЕ СЮДА ВАШУ ССЫЛКУ НА APPS SCRIPT
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/ЗАМЕНИТЕ_НА_ВАШУ_ССЫЛКУ/exec';
         
         // Таймер
         function updateTimer() {
             const weddingDate = new Date('2026-06-26T18:00:00').getTime();
             const now = new Date().getTime();
             const distance = weddingDate - now;
+            
+            if (distance < 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
             
             document.getElementById('days').textContent = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
             document.getElementById('hours').textContent = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
@@ -755,63 +818,93 @@
         setInterval(updateTimer, 1000);
         
         // Музыка
+        let isPlaying = false;
         const music = document.getElementById('bgMusic');
-        window.addEventListener('load', function() {
-            music.play().catch(() => {});
+        const toggleBtn = document.getElementById('musicToggle');
+        
+        toggleBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                music.pause();
+                toggleBtn.innerHTML = '<i class="fas fa-music"></i><span>Включить музыку</span>';
+            } else {
+                music.play();
+                toggleBtn.innerHTML = '<i class="fas fa-pause"></i><span>Выключить музыку</span>';
+            }
+            isPlaying = !isPlaying;
         });
         
-        // Форма - отправка в Google Таблицу
+        // Автостарт музыки
+        window.addEventListener('load', function() {
+            music.play().then(() => {
+                isPlaying = true;
+                toggleBtn.innerHTML = '<i class="fas fa-pause"></i><span>Выключить музыку</span>';
+            }).catch(() => {});
+        });
+        
+        // ФОРМА - ОТПРАВКА В GOOGLE TABLES
         document.getElementById('rsvpForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const submitBtn = this.querySelector('.submit-btn-premium');
             const originalText = submitBtn.innerHTML;
             
+            // Собираем диету
             const diet = [];
-            document.querySelectorAll('input[name="diet"]:checked').forEach(cb => {
-                diet.push(cb.value);
-            });
+            if (document.getElementById('diet1').checked) diet.push('Вегетарианское');
+            if (document.getElementById('diet2').checked) diet.push('Халяльное');
+            if (document.getElementById('diet3').checked) diet.push('Аллергия');
             
+            // Формируем данные
             const formData = {
                 name: document.getElementById('guestName').value,
                 phone: document.getElementById('guestPhone').value,
                 guests: document.getElementById('guestCount').value,
                 diet: diet.join(', '),
                 message: document.getElementById('guestMessage').value,
-                wedding: 'Айбек и Айгерим - 26.06.2026'
+                wedding: 'Айбек и Айгерим - 26.06.2026',
+                timestamp: new Date().toLocaleString('ru-RU')
             };
             
+            // Показываем загрузку
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
             submitBtn.disabled = true;
             
             try {
-                await fetch(GOOGLE_SCRIPT_URL, {
+                // Отправляем в Google Sheets
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
                     method: 'POST',
                     mode: 'no-cors',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
                     body: JSON.stringify(formData)
                 });
                 
+                // Показываем успех
                 document.getElementById('formResponse').innerHTML = `
                     <div style="background: #e8f5e9; padding: 25px; border-radius: 15px; border-left: 5px solid #4caf50;">
-                        <i class="fas fa-check-circle" style="color: #4caf50; font-size: 2rem; margin-bottom: 10px;"></i>
+                        <i class="fas fa-check-circle" style="color: #4caf50; font-size: 2rem; margin-bottom: 15px;"></i>
                         <h3 style="color: #2c3e4f; margin-bottom: 10px;">Спасибо, ${formData.name}!</h3>
-                        <p style="color: #5d6d7e;">Ваше подтверждение получено. Ждем вас!</p>
+                        <p style="color: #5d6d7e; margin-bottom: 5px;">Ваше подтверждение сохранено.</p>
+                        <p style="color: #5d6d7e;">Ждем вас 26 июня 2026! 🎉</p>
                     </div>
                 `;
                 
+                // Очищаем форму
                 this.reset();
                 
             } catch (error) {
+                // Показываем ошибку
                 document.getElementById('formResponse').innerHTML = `
                     <div style="background: #ffebee; padding: 25px; border-radius: 15px; border-left: 5px solid #f44336;">
-                        <i class="fas fa-exclamation-triangle" style="color: #f44336; font-size: 2rem; margin-bottom: 10px;"></i>
-                        <h3 style="color: #2c3e4f; margin-bottom: 10px;">Ошибка</h3>
-                        <p style="color: #5d6d7e;">Позвоните нам: +7 (777) 123-45-67</p>
+                        <i class="fas fa-exclamation-triangle" style="color: #f44336; font-size: 2rem; margin-bottom: 15px;"></i>
+                        <h3 style="color: #2c3e4f; margin-bottom: 10px;">Ошибка отправки</h3>
+                        <p style="color: #5d6d7e;">Пожалуйста, позвоните нам: +7 (777) 123-45-67</p>
                     </div>
                 `;
             }
             
+            // Возвращаем кнопку
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
         });
