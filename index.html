@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>Тиляпжан & Сахидям | Премиум свадьба</title>
+    <title>Айбек & Айгерим | Премиум свадьба</title>
     
-    <!-- ⭐⭐⭐ КРАСИВЫЕ ШРИФТЫ ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ ШРИФТЫ ⭐⭐⭐ -->
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* ⭐⭐⭐ МИНИМАЛИЗМ - ПОЛНОСТЬЮ ⭐⭐⭐ */
+        /* ⭐⭐⭐ МИНИМАЛИЗМ ⭐⭐⭐ */
         * {
             margin: 0;
             padding: 0;
@@ -34,7 +34,7 @@
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 24px;
             width: 100%;
@@ -49,7 +49,7 @@
             animation: fadeIn 1.2s ease;
         }
         
-        /* ⭐⭐⭐ ГЕРОЙ - ЧЕРНО-БЕЛОЕ ФОТО ⭐⭐⭐ */
+        /* ⭐⭐⭐ ГЕРОЙ - ВАША ССЫЛКА ⭐⭐⭐ */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -57,7 +57,7 @@
             justify-content: center;
             text-align: center;
             background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-                        url('https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1600&auto=format&fit=crop');
+                        url('https://avatars.mds.yandex.net/i?id=1c8810eec13fce6e908c36f0588567ffa74429dd-5623485-images-thumbs&n=13');
             background-size: cover;
             background-position: center 30%;
             background-attachment: fixed;
@@ -154,7 +154,7 @@
             border: none;
         }
         
-        /* ⭐⭐⭐ ТАЙМЕР - МИНИМАЛИЗМ ⭐⭐⭐ */
+        /* ⭐⭐⭐ ТАЙМЕР ⭐⭐⭐ */
         .timer-section {
             margin-top: 40px;
             background: rgba(0, 0, 0, 0.25);
@@ -208,7 +208,7 @@
             letter-spacing: 2px;
         }
         
-        /* ⭐⭐⭐ СЕКЦИИ - МИНИМАЛИЗМ ⭐⭐⭐ */
+        /* ⭐⭐⭐ СЕКЦИИ ⭐⭐⭐ */
         .section {
             padding: 100px 0;
             background: #ffffff;
@@ -243,7 +243,7 @@
             border: none;
         }
         
-        /* ⭐⭐⭐ ГАЛЕРЕЯ - МИНИМАЛИЗМ ⭐⭐⭐ */
+        /* ⭐⭐⭐ ГАЛЕРЕЯ ⭐⭐⭐ */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -265,77 +265,91 @@
             opacity: 1;
         }
         
-        /* ⭐⭐⭐ ПРОГРАММА ДНЯ - ОБНОВЛЕННАЯ ⭐⭐⭐ */
+        /* ⭐⭐⭐ ПРОГРАММА ДНЯ - ДИЗАЙН КАК НА КАРТИНКЕ ⭐⭐⭐ */
         .timeline-section {
             background: #faf9f7;
             padding: 100px 0;
             position: relative;
         }
         
-        .timeline {
-            max-width: 600px;
+        .timeline-grid {
+            max-width: 1000px;
             margin: 60px auto 0;
-            position: relative;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 1px;
-            background: #d6cec1;
-            opacity: 0.4;
-        }
-        
-        .timeline-item {
             display: flex;
-            margin-bottom: 45px;
-            position: relative;
-            padding-left: 30px;
+            flex-direction: column;
+            gap: 40px;
         }
         
-        .timeline-item::before {
-            content: '●';
-            position: absolute;
-            left: -5px;
-            top: 0;
-            color: #b5a37e;
-            font-size: 1rem;
+        .timeline-row {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .timeline-row.reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-image {
+            flex: 1;
+            height: 280px;
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(80%);
+            border: 1px solid #f0f0f0;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            padding: 20px 30px;
         }
         
         .timeline-time {
             font-family: 'Lora', 'Georgia', serif;
             font-style: italic;
-            min-width: 90px;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             color: #b5a37e;
             font-weight: 400;
-            padding-right: 20px;
-        }
-        
-        .timeline-content {
-            flex: 1;
+            margin-bottom: 10px;
         }
         
         .timeline-title {
             font-family: 'EB Garamond', 'Georgia', serif;
             font-style: italic;
-            font-size: 1.5rem;
-            margin-bottom: 6px;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
             color: #1e1e1e;
             font-weight: 400;
+            letter-spacing: 1px;
         }
         
         .timeline-desc {
             font-family: 'Cardo', 'Georgia', serif;
             color: #6a6a6a;
-            font-size: 1rem;
-            font-style: normal;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
         
-        /* ⭐⭐⭐ ДРЕСС-КОД - НОВЫЙ БЛОК ⭐⭐⭐ */
+        @media (max-width: 768px) {
+            .timeline-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .timeline-row.reverse {
+                flex-direction: column;
+            }
+            .timeline-image {
+                width: 100%;
+                height: 220px;
+            }
+            .timeline-content {
+                width: 100%;
+                padding: 20px 0;
+                text-align: center;
+            }
+        }
+        
+        /* ⭐⭐⭐ ДРЕСС-КОД ⭐⭐⭐ */
         .dresscode-section {
             background: #ffffff;
             padding: 100px 0;
@@ -395,7 +409,7 @@
             color: #1e1e1e;
         }
         
-        /* ⭐⭐⭐ КАЛЕНДАРЬ - НОВЫЙ БЛОК ⭐⭐⭐ */
+        /* ⭐⭐⭐ КАЛЕНДАРЬ ⭐⭐⭐ */
         .calendar-section {
             background: #faf9f7;
             padding: 100px 0;
@@ -485,7 +499,7 @@
             font-size: 1.2rem;
         }
         
-        /* ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - ПРЕЖНЕЕ (Астана) ⭐⭐⭐ */
+        /* ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - АСТАНА ⭐⭐⭐ */
         .venue-section {
             background: #ffffff;
             padding: 100px 0;
@@ -568,7 +582,7 @@
             color: white;
         }
         
-        /* ⭐⭐⭐ ФОРМА - APPS SCRIPT ⭐⭐⭐ */
+        /* ⭐⭐⭐ ФОРМА ⭐⭐⭐ */
         .form-section {
             background: #faf9f7;
             padding: 100px 0;
@@ -696,7 +710,7 @@
             color: white;
         }
         
-        /* ⭐⭐⭐ КОНТАКТЫ - WHATSAPP ⭐⭐⭐ */
+        /* ⭐⭐⭐ КОНТАКТЫ ⭐⭐⭐ */
         .contact-section {
             background: #ffffff;
             padding: 100px 0;
@@ -767,7 +781,7 @@
             color: white;
         }
         
-        /* ⭐⭐⭐ ФУТЕР - МИНИМАЛИЗМ ⭐⭐⭐ */
+        /* ⭐⭐⭐ ФУТЕР ⭐⭐⭐ */
         .footer {
             background: #ffffff;
             color: #1e1e1e;
@@ -797,7 +811,7 @@
             font-size: 0.95rem;
         }
         
-        /* ⭐⭐⭐ МУЗЫКА - МИНИМАЛИЗМ ⭐⭐⭐ */
+        /* ⭐⭐⭐ МУЗЫКА ⭐⭐⭐ */
         .music-player {
             position: fixed;
             bottom: 30px;
@@ -873,12 +887,8 @@
             .timer-grid { gap: 15px; }
             .gallery-grid { grid-template-columns: 1fr; }
             .gallery-item { height: 200px; }
-            .timeline-item { flex-direction: column; }
-            .timeline-time { 
-                min-width: auto; 
-                margin-bottom: 5px; 
-                padding-right: 0;
-            }
+            .timeline-time { font-size: 1.3rem; }
+            .timeline-title { font-size: 1.5rem; }
             .dresscode-grid { gap: 30px; }
             .calendar-container { padding: 30px 20px; }
             .calendar-date { font-size: 2.5rem; }
@@ -904,15 +914,15 @@
     <!-- ⭐⭐⭐ ГЕРОЙ ⭐⭐⭐ -->
     <section class="hero">
         <div class="hero-content fade-in">
-            <div class="hero-pre">ҮЙЛЕНУ ТОЙЫ</div>
+            <div class="hero-pre">СВАДЕБНОЕ ПРИГЛАШЕНИЕ</div>
             
             <h1 class="hero-names">
-                <span class="name-part">ТИЛЯПЖАН</span>
+                <span class="name-part">АЙБЕК</span>
                 <span class="hero-and">&</span>
-                <span class="name-part">САХИДЯМ</span>
+                <span class="name-part">АЙГЕРИМ</span>
             </h1>
             
-            <div class="hero-date">15 ЖЕЛТОҚСАН 2026</div>
+            <div class="hero-date">26 ИЮНЯ 2026</div>
             
             <div class="hero-divider"></div>
             
@@ -921,11 +931,11 @@
                 <div class="timer-grid">
                     <div class="timer-item">
                         <div class="timer-number" id="days">00</div>
-                        <div class="timer-label">КҮН</div>
+                        <div class="timer-label">ДНЕЙ</div>
                     </div>
                     <div class="timer-item">
                         <div class="timer-number" id="hours">00</div>
-                        <div class="timer-label">САҒАТ</div>
+                        <div class="timer-label">ЧАСОВ</div>
                     </div>
                     <div class="timer-item">
                         <div class="timer-number" id="minutes">00</div>
@@ -960,84 +970,100 @@
         </div>
     </section>
     
-    <!-- ⭐⭐⭐ ПРОГРАММА ДНЯ - ОБНОВЛЕННАЯ ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ ПРОГРАММА ДНЯ - ДИЗАЙН КАК НА КАРТИНКЕ ⭐⭐⭐ -->
     <section class="timeline-section">
         <div class="container">
             <h2 class="section-title">Программа дня</h2>
             <div class="section-subtitle">SCHEDULE</div>
             <div class="section-divider"></div>
             
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-time">18:00</div>
+            <div class="timeline-grid">
+                <!-- 1. Сбор гостей - фото слева, текст справа -->
+                <div class="timeline-row">
+                    <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500');"></div>
                     <div class="timeline-content">
+                        <div class="timeline-time">18:00</div>
                         <h3 class="timeline-title">Сбор гостей</h3>
-                        <div class="timeline-desc">Фуршет, встреча молодоженов</div>
+                        <div class="timeline-desc">Фуршет, живая музыка, первая встреча с молодыми</div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">18:30</div>
+                
+                <!-- 2. Фотосессия - фото справа, текст слева -->
+                <div class="timeline-row reverse">
+                    <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=500');"></div>
                     <div class="timeline-content">
+                        <div class="timeline-time">18:30</div>
                         <h3 class="timeline-title">Фотосессия</h3>
-                        <div class="timeline-desc">Совместные фотографии с гостями</div>
+                        <div class="timeline-desc">Совместные фотографии с гостями, памятные кадры</div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">19:00</div>
+                
+                <!-- 3. Торжественная церемония - фото слева, текст справа -->
+                <div class="timeline-row">
+                    <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=500');"></div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Начало</h3>
-                        <div class="timeline-desc">Торжественная церемония, беташар</div>
+                        <div class="timeline-time">19:00</div>
+                        <h3 class="timeline-title">Торжественная церемония</h3>
+                        <div class="timeline-desc">Встреча молодоженов, беташар, первые поздравления</div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">20:00</div>
+                
+                <!-- 4. Шоу программа - фото справа, текст слева -->
+                <div class="timeline-row reverse">
+                    <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500');"></div>
                     <div class="timeline-content">
+                        <div class="timeline-time">20:00</div>
                         <h3 class="timeline-title">Шоу программа</h3>
-                        <div class="timeline-desc">Конкурсы, выступления артистов</div>
+                        <div class="timeline-desc">Конкурсы, выступления артистов, интерактив с гостями</div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">22:30</div>
+                
+                <!-- 5. Танец жениха и невесты - фото слева, текст справа -->
+                <div class="timeline-row">
+                    <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1509927083803-4bd519298ac9?w=500');"></div>
                     <div class="timeline-content">
+                        <div class="timeline-time">22:30</div>
                         <h3 class="timeline-title">Танец жениха и невесты</h3>
-                        <div class="timeline-desc">Первый совместный танец</div>
+                        <div class="timeline-desc">Первый совместный танец, самый трогательный момент вечера</div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">23:00</div>
+                
+                <!-- 6. Торжественный торт - фото справа, текст слева -->
+                <div class="timeline-row reverse">
+                    <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=500');"></div>
                     <div class="timeline-content">
+                        <div class="timeline-time">23:00</div>
                         <h3 class="timeline-title">Торжественный торт</h3>
-                        <div class="timeline-desc">Разрезание свадебного торта</div>
+                        <div class="timeline-desc">Разрезание свадебного торта, сладкий стол</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- ⭐⭐⭐ КАЛЕНДАРЬ - НОВЫЙ БЛОК ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ КАЛЕНДАРЬ ⭐⭐⭐ -->
     <section class="calendar-section">
         <div class="container">
-            <h2 class="section-title">Құтты шаңырақ</h2>
-            <div class="section-subtitle">WEDDING DAY</div>
+            <h2 class="section-title">Дата торжества</h2>
+            <div class="section-subtitle">DATE</div>
             <div class="section-divider"></div>
             
             <div class="calendar-container">
                 <div class="calendar-title">БОЛУҒА ШАҚЫРАМЫЗ!</div>
-                <div class="calendar-date">15</div>
-                <div class="calendar-month">ЖЕЛТОҚСАН 2026</div>
+                <div class="calendar-date">26</div>
+                <div class="calendar-month">ИЮНЯ 2026</div>
                 
                 <div class="calendar-weekdays">
-                    <div>Дс</div>
-                    <div>Сс</div>
+                    <div>Пн</div>
+                    <div>Вт</div>
                     <div>Ср</div>
-                    <div>Бс</div>
-                    <div>Жм</div>
-                    <div>Сн</div>
-                    <div>Жб</div>
+                    <div>Чт</div>
+                    <div>Пт</div>
+                    <div>Сб</div>
+                    <div>Вс</div>
                 </div>
                 
                 <div class="calendar-days">
-                    <div class="calendar-day"></div>
                     <div class="calendar-day">01</div>
                     <div class="calendar-day">02</div>
                     <div class="calendar-day">03</div>
@@ -1052,7 +1078,7 @@
                     <div class="calendar-day">12</div>
                     <div class="calendar-day">13</div>
                     <div class="calendar-day">14</div>
-                    <div class="calendar-day highlight">15</div>
+                    <div class="calendar-day">15</div>
                     <div class="calendar-day">16</div>
                     <div class="calendar-day">17</div>
                     <div class="calendar-day">18</div>
@@ -1063,23 +1089,23 @@
                     <div class="calendar-day">23</div>
                     <div class="calendar-day">24</div>
                     <div class="calendar-day">25</div>
-                    <div class="calendar-day">26</div>
+                    <div class="calendar-day highlight">26</div>
                     <div class="calendar-day">27</div>
                     <div class="calendar-day">28</div>
                     <div class="calendar-day">29</div>
                     <div class="calendar-day">30</div>
-                    <div class="calendar-day">31</div>
+                    <div class="calendar-day"></div>
                 </div>
                 
                 <div class="calendar-time">
-                    <p><strong>Беташар:</strong> 18:00</p>
-                    <p><strong>Той:</strong> 19:00</p>
+                    <p><strong>Сбор гостей:</strong> 18:00</p>
+                    <p><strong>Начало церемонии:</strong> 19:00</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- ⭐⭐⭐ ДРЕСС-КОД - НОВЫЙ БЛОК ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ ДРЕСС-КОД ⭐⭐⭐ -->
     <section class="dresscode-section">
         <div class="container">
             <h2 class="section-title">Дресс-код</h2>
@@ -1105,12 +1131,12 @@
             </div>
             
             <div class="dresscode-note">
-                <p>Нам будет очень приятно, если вы поддержите<br>стиль торжества в своих нарядах</p>
+                <p>Нам будет очень приятно, если вы поддержите стиль торжества в своих нарядах</p>
             </div>
         </div>
     </section>
     
-    <!-- ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - ПРЕЖНЕЕ (Астана) ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - АСТАНА ⭐⭐⭐ -->
     <section class="venue-section">
         <div class="container">
             <h2 class="section-title">Место проведения</h2>
@@ -1214,10 +1240,10 @@
                     <div class="contact-icon">
                         <i class="fas fa-rings"></i>
                     </div>
-                    <h3>Тиляпжан</h3>
+                    <h3>Айбек</h3>
                     <div class="contact-role">ЖЕНИХ</div>
                     <div class="contact-phone-number">+7 (777) 111-22-33</div>
-                    <a href="https://wa.me/77771112233?text=Здравствуйте, Тиляпжан! Подтверждаю участие на вашей свадьбе 15.12.2026" 
+                    <a href="https://wa.me/77771112233?text=Здравствуйте, Айбек! Подтверждаю участие на вашей свадьбе 26.06.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
                         <i class="fab fa-whatsapp"></i> WhatsApp
@@ -1229,10 +1255,10 @@
                     <div class="contact-icon">
                         <i class="fas fa-rings"></i>
                     </div>
-                    <h3>Сахидям</h3>
+                    <h3>Айгерим</h3>
                     <div class="contact-role">НЕВЕСТА</div>
                     <div class="contact-phone-number">+7 (777) 444-55-66</div>
-                    <a href="https://wa.me/77774445566?text=Здравствуйте, Сахидям! Подтверждаю участие на вашей свадьбе 15.12.2026" 
+                    <a href="https://wa.me/77774445566?text=Здравствуйте, Айгерим! Подтверждаю участие на вашей свадьбе 26.06.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
                         <i class="fab fa-whatsapp"></i> WhatsApp
@@ -1245,10 +1271,10 @@
     <!-- ⭐⭐⭐ ФУТЕР ⭐⭐⭐ -->
     <footer class="footer">
         <div class="footer-names">
-            Тиляпжан <span class="footer-heart">✦</span> Сахидям
+            Айбек <span class="footer-heart">✦</span> Айгерим
         </div>
-        <p>15 желтоқсан 2026 • Астана</p>
-        <p style="margin-top: 30px; font-style: italic; color: #b5a37e;">Рамиль & Асия</p>
+        <p>26 июня 2026 • Астана</p>
+        <p style="margin-top: 30px; font-style: italic; color: #b5a37e;">С нетерпением ждем вас</p>
     </footer>
     
     <!-- ⭐⭐⭐ МУЗЫКА ⭐⭐⭐ -->
@@ -1268,7 +1294,7 @@
         
         // Таймер
         function updateTimer() {
-            const weddingDate = new Date('2026-12-15T18:00:00').getTime();
+            const weddingDate = new Date('2026-06-26T18:00:00').getTime();
             const now = new Date().getTime();
             const distance = weddingDate - now;
             
@@ -1331,7 +1357,7 @@
                 guests: document.getElementById('guestCount').value,
                 diet: diet.join(', '),
                 message: document.getElementById('guestMessage').value,
-                wedding: 'Тиляпжан и Сахидям - 15.12.2026'
+                wedding: 'Айбек и Айгерим - 26.06.2026'
             };
             
             submitBtn.innerHTML = 'Отправка...';
@@ -1349,7 +1375,7 @@
                     <div style="padding: 20px; border: 1px solid #e8e8e8;">
                         <p style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.3rem; color: #b5a37e; margin-bottom: 10px;">Спасибо, ${formData.name}!</p>
                         <p style="font-family: 'Cardo', serif; color: #6a6a6a;">Ваше подтверждение сохранено.</p>
-                        <p style="font-family: 'Cardo', serif; color: #6a6a6a; margin-top: 10px;">Ждем вас 15 декабря 2026</p>
+                        <p style="font-family: 'Cardo', serif; color: #6a6a6a; margin-top: 10px;">Ждем вас 26 июня 2026</p>
                     </div>
                 `;
                 
