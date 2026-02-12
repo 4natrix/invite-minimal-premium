@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Айбек & Айгерим | Премиум свадьба в Астане</title>
+    <title>Айбек & Айгерим | Минимализм</title>
     
-    <!-- ⭐⭐⭐ ПОДКЛЮЧАЕМ КРАСИВЫЕ ШРИФТЫ С GOOGLE FONTS ⭐⭐⭐ -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ⭐⭐⭐ КРАСИВЫЕ ШРИФТЫ: курсивные + минималистичные ⭐⭐⭐ -->
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* ⭐⭐⭐ МИНИМАЛИСТИЧНЫЙ СБРОС ⭐⭐⭐ */
         * {
             margin: 0;
             padding: 0;
@@ -21,475 +22,559 @@
         }
         
         body {
-            /* ⭐⭐ СТАРЫЙ ШРИФТ: 'Georgia', 'Times New Roman', serif; */
-            /* ⭐⭐ НОВЫЙ КРАСИВЫЙ ШРИФТ: Cormorant Garamond - элегантный, свадебный */
-            font-family: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
-            color: #2c3e4f;
-            background: #fff;
+            /* ⭐⭐ ОСНОВНОЙ ШРИФТ: Cardo - античный, минималистичный, красивые курсивы */
+            font-family: 'Cardo', 'EB Garamond', 'Georgia', serif;
+            color: #1e1e1e;
+            background: #ffffff;
             overflow-x: hidden;
             width: 100%;
             -webkit-text-size-adjust: 100%;
             font-weight: 400;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
             width: 100%;
         }
         
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+        /* ⭐⭐ МИНИМАЛИСТИЧНЫЕ АНИМАЦИИ */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         
-        .animate {
-            animation: fadeInUp 1s ease-out;
+        .fade-in {
+            animation: fadeIn 1.2s ease;
         }
         
-        /* Герой */
+        /* ⭐⭐⭐ ГЕРОЙ - МИНИМАЛИЗМ ⭐⭐⭐ */
         .hero {
-            min-height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600');
-            background-size: cover;
-            background-position: center;
-            background-attachment: scroll;
+            min-height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: white;
-            width: 100%;
+            background: #ffffff;
+            padding: 40px 20px;
+            border-bottom: 1px solid #eaeaea;
         }
         
         .hero-content {
-            max-width: 1000px;
+            max-width: 900px;
             padding: 20px;
-            width: 100%;
         }
         
         .hero-pre {
-            /* ⭐⭐ СТАРЫЙ ШРИФТ: без указания */
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat - строгий, красивый для маленького текста */
-            font-family: 'Montserrat', 'Arial', sans-serif;
-            font-size: 0.9rem;
-            letter-spacing: 8px;
-            margin-bottom: 20px;
-            color: rgba(255,255,255,0.9);
+            /* ⭐⭐ СТРОГИЙ МИНИМАЛИСТИЧНЫЙ ШРИФТ */
+            font-family: 'Inter', 'Arial', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 6px;
+            margin-bottom: 30px;
+            color: #8a8a8a;
             text-transform: uppercase;
             font-weight: 400;
         }
         
         .hero-names {
-            /* ⭐⭐ СТАРЫЙ ШРИФТ: Georgia */
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Playfair Display - роскошный, торжественный */
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 4.5rem;
-            font-weight: 600;
-            letter-spacing: 6px;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+            /* ⭐⭐ ЭЛЕГАНТНЫЙ КУРСИВ */
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 4.2rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #1e1e1e;
             line-height: 1.2;
         }
         
         .hero-and {
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 3rem;
-            color: #d4af37;
-            margin: 0 15px;
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 2.8rem;
+            color: #b5a37e;
+            margin: 0 10px;
             font-weight: 400;
         }
         
         .hero-date {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond - элегантный для даты */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
-            font-size: 2.2rem;
+            /* ⭐⭐ КУРСИВНЫЙ ШРИФТ ДЛЯ ДАТЫ */
+            font-family: 'Lora', 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.4rem;
             font-weight: 400;
             margin-bottom: 40px;
-            letter-spacing: 4px;
-            color: rgba(255,255,255,0.95);
+            letter-spacing: 2px;
+            color: #6a6a6a;
         }
         
-        /* Таймер */
-        .timer-premium {
-            background: rgba(0,0,0,0.5);
-            backdrop-filter: blur(10px);
-            padding: 30px 20px;
-            border-radius: 30px;
-            border: 1px solid rgba(255,255,255,0.2);
-            display: inline-block;
-            width: 100%;
-            max-width: 700px;
-            margin-top: 20px;
+        .hero-divider {
+            width: 40px;
+            height: 1px;
+            background: #d4af37;
+            margin: 30px auto;
         }
         
-        .timer-premium-grid {
+        /* ⭐⭐⭐ ТАЙМЕР - МИНИМАЛИЗМ ⭐⭐⭐ */
+        .timer-section {
+            margin-top: 40px;
+        }
+        
+        .timer-grid {
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 30px;
             flex-wrap: wrap;
         }
         
-        .timer-premium-item {
+        .timer-item {
             text-align: center;
-            min-width: 80px;
+            min-width: 70px;
         }
         
-        .timer-premium-number {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Playfair Display - красивые цифры */
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 3.5rem;
-            font-weight: 500;
+        .timer-number {
+            /* ⭐⭐ ЧЕТКИЙ МИНИМАЛИСТИЧНЫЙ ШРИФТ */
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #1e1e1e;
             line-height: 1;
-            color: white;
         }
         
-        .timer-premium-label {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat - строгий, читаемый */
-            font-family: 'Montserrat', 'Arial', sans-serif;
-            font-size: 0.8rem;
+        .timer-label {
+            font-family: 'Inter', 'Arial', sans-serif;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             margin-top: 8px;
-            color: rgba(255,255,255,0.8);
+            color: #8a8a8a;
             font-weight: 400;
         }
         
-        /* Секции */
+        /* ⭐⭐⭐ СЕКЦИИ - МИНИМАЛИЗМ ⭐⭐⭐ */
         .section {
             padding: 80px 0;
+            background: #ffffff;
         }
         
         .section-title {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Playfair Display - торжественные заголовки */
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 2.8rem;
-            font-weight: 500;
+            /* ⭐⭐ КУРСИВ ДЛЯ ЗАГОЛОВКОВ */
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 2.2rem;
+            font-weight: 400;
             text-align: center;
-            margin-bottom: 20px;
-            color: #2c3e4f;
-            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #1e1e1e;
+            letter-spacing: 1px;
+        }
+        
+        .section-subtitle {
+            font-family: 'Inter', 'Arial', sans-serif;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #8a8a8a;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
         }
         
         .section-divider {
-            width: 80px;
-            height: 2px;
+            width: 60px;
+            height: 1px;
             background: #d4af37;
             margin: 0 auto 50px;
         }
         
-        /* Галерея */
+        /* ⭐⭐⭐ ГАЛЕРЕЯ - МИНИМАЛИЗМ ⭐⭐⭐ */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-top: 30px;
+            gap: 2px;
+            margin-top: 40px;
+            background: #ffffff;
         }
         
         .gallery-item {
-            height: 250px;
+            height: 220px;
             background-size: cover;
             background-position: center;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.3s;
+            filter: grayscale(100%);
+            transition: all 0.6s ease;
+            opacity: 0.85;
         }
         
         .gallery-item:hover {
-            transform: scale(1.03);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            filter: grayscale(0%);
+            opacity: 1;
         }
         
-        /* Программа */
+        /* ⭐⭐⭐ ПРОГРАММА ДНЯ - КРАСИВЫЙ ФОН, КУРСИВЫ ⭐⭐⭐ */
+        .timeline-section {
+            background: #faf9f7;
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .timeline-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        
         .timeline {
-            max-width: 700px;
-            margin: 40px auto;
+            max-width: 600px;
+            margin: 60px auto 0;
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: #e0d6cc;
+            opacity: 0.4;
         }
         
         .timeline-item {
             display: flex;
-            margin-bottom: 35px;
-            flex-wrap: wrap;
+            margin-bottom: 45px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '●';
+            position: absolute;
+            left: -5px;
+            top: 0;
+            color: #d4af37;
+            font-size: 1rem;
         }
         
         .timeline-time {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Playfair Display - красивое время */
-            font-family: 'Playfair Display', 'Georgia', serif;
-            min-width: 100px;
-            font-size: 1.8rem;
-            color: #d4af37;
-            font-weight: 500;
+            /* ⭐⭐ КУРСИВ ДЛЯ ВРЕМЕНИ */
+            font-family: 'Lora', 'Georgia', serif;
+            font-style: italic;
+            min-width: 90px;
+            font-size: 1.3rem;
+            color: #b5a37e;
+            font-weight: 400;
             padding-right: 20px;
         }
         
+        .timeline-content {
+            flex: 1;
+        }
+        
         .timeline-title {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond - элегантные подзаголовки */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
-            font-size: 1.6rem;
-            margin-bottom: 5px;
-            color: #2c3e4f;
-            font-weight: 600;
+            /* ⭐⭐ КУРСИВ ДЛЯ НАЗВАНИЙ */
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+            color: #1e1e1e;
+            font-weight: 400;
         }
         
         .timeline-desc {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond - красивый текст */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
-            color: #5d6d7e;
-            font-size: 1.1rem;
-            font-weight: 400;
+            font-family: 'Cardo', 'Georgia', serif;
+            color: #6a6a6a;
+            font-size: 1rem;
+            font-style: normal;
         }
         
-        /* Место проведения */
-        .venue-premium {
-            background: #fcf9f7;
+        /* ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - МИНИМАЛИЗМ ⭐⭐⭐ */
+        .venue-section {
+            background: #ffffff;
             padding: 80px 0;
         }
         
-        .venue-card-premium {
-            background: white;
-            padding: 50px 30px;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+        .venue-card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border: 1px solid #f0f0f0;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            box-shadow: none;
         }
         
-        .venue-name-premium {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Playfair Display */
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 2.4rem;
-            color: #2c3e4f;
-            margin-bottom: 10px;
-            font-weight: 600;
-            letter-spacing: 2px;
-        }
-        
-        .venue-address-premium {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
-            font-size: 1.3rem;
-            color: #5d6d7e;
+        .venue-name {
+            /* ⭐⭐ КУРСИВ ДЛЯ НАЗВАНИЯ РЕСТОРАНА */
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 2rem;
+            color: #1e1e1e;
             margin-bottom: 15px;
             font-weight: 400;
+            letter-spacing: 1px;
         }
         
-        .venue-time-premium {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat */
-            font-family: 'Montserrat', 'Arial', sans-serif;
-            color: #d4af37;
-            font-size: 1.3rem;
+        .venue-address {
+            font-family: 'Cardo', 'Georgia', serif;
+            font-size: 1.1rem;
+            color: #6a6a6a;
+            margin-bottom: 15px;
+        }
+        
+        .venue-time {
+            font-family: 'Inter', 'Arial', sans-serif;
+            color: #b5a37e;
+            font-size: 0.9rem;
             font-weight: 500;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
-        /* Карта */
-        .map-premium {
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-            margin: 30px 0;
+        .map-container {
+            margin: 40px 0;
+            border: 1px solid #f0f0f0;
+            padding: 10px;
+            background: #ffffff;
         }
         
-        .map-premium iframe {
+        .map-container iframe {
             width: 100%;
-            height: 400px;
+            height: 350px;
             border: 0;
+            filter: grayscale(50%);
         }
         
-        .map-buttons-premium {
+        .map-buttons {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
             margin: 30px 0;
             flex-wrap: wrap;
         }
         
-        .map-btn-premium {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat - для кнопок */
-            font-family: 'Montserrat', 'Arial', sans-serif;
+        .map-btn {
+            font-family: 'Inter', 'Arial', sans-serif;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            padding: 12px 30px;
-            background: white;
+            gap: 8px;
+            padding: 10px 25px;
+            background: transparent;
             border: 1px solid #e0e0e0;
-            border-radius: 50px;
+            border-radius: 0;
             text-decoration: none;
-            color: #2c3e4f;
-            transition: all 0.3s;
-            font-size: 0.95rem;
-            font-weight: 500;
+            color: #1e1e1e;
+            transition: all 0.2s;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 1px;
         }
         
-        .map-btn-premium:hover {
-            background: #d4af37;
-            border-color: #d4af37;
+        .map-btn:hover {
+            background: #b5a37e;
+            border-color: #b5a37e;
             color: white;
         }
         
-        /* ФОРМА - APPS SCRIPT */
-        .rsvp-premium {
-            background: white;
-            padding: 80px 0;
+        /* ⭐⭐⭐ ФОРМА - МИНИМАЛИЗМ ⭐⭐⭐ */
+        .form-section {
+            background: #faf9f7;
+            padding: 100px 0;
         }
         
-        .form-premium {
-            max-width: 600px;
+        .form-container {
+            max-width: 550px;
             margin: 0 auto;
-            background: white;
-            padding: 50px 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            background: #ffffff;
+            padding: 60px 50px;
             border: 1px solid #f0f0f0;
         }
         
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
         .form-group label {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat - для подписей полей */
-            font-family: 'Montserrat', 'Arial', sans-serif;
+            font-family: 'Inter', 'Arial', sans-serif;
             display: block;
             margin-bottom: 8px;
-            color: #2c3e4f;
-            font-weight: 500;
-            font-size: 0.95rem;
+            color: #1e1e1e;
+            font-weight: 400;
+            font-size: 0.8rem;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
         
         .form-group input,
         .form-group select,
         .form-group textarea {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond - для ввода текста */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
+            font-family: 'Cardo', 'Georgia', serif;
             width: 100%;
-            padding: 15px 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            background: #fafafa;
-            font-weight: 400;
+            padding: 12px 0;
+            border: none;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 1rem;
+            transition: all 0.2s;
+            background: transparent;
+            border-radius: 0;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-bottom-color: #b5a37e;
+            outline: none;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 15px;
         }
         
         .checkbox-label {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
+            font-family: 'Cardo', 'Georgia', serif;
             display: flex;
             align-items: center;
             gap: 8px;
             cursor: pointer;
-            font-size: 1.1rem;
-            font-weight: 400;
+            font-size: 0.95rem;
+            color: #4a4a4a;
         }
         
-        .submit-btn-premium {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat - для кнопки */
-            font-family: 'Montserrat', 'Arial', sans-serif;
+        .submit-btn {
+            font-family: 'Inter', 'Arial', sans-serif;
             width: 100%;
-            padding: 18px 30px;
-            background: #d4af37;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
+            padding: 15px 30px;
+            background: transparent;
+            color: #1e1e1e;
+            border: 1px solid #1e1e1e;
+            border-radius: 0;
+            font-size: 0.9rem;
             cursor: pointer;
-            transition: all 0.3s;
-            margin-top: 20px;
-            font-weight: 600;
-            letter-spacing: 2px;
+            transition: all 0.2s;
+            margin-top: 30px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
         
-        /* WhatsApp контакты */
-        .contact-premium {
-            background: #fcf9f7;
+        .submit-btn:hover {
+            background: #1e1e1e;
+            color: white;
+        }
+        
+        /* ⭐⭐⭐ КОНТАКТЫ - МИНИМАЛИЗМ ⭐⭐⭐ */
+        .contact-section {
+            background: #ffffff;
             padding: 80px 0;
         }
         
+        .contact-grid {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
         .contact-card {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 20px;
             text-align: center;
-            flex: 0 1 320px;
-            transition: all 0.3s;
-            border: 1px solid #f0e7e0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            flex: 0 1 280px;
+            padding: 30px 20px;
+            border: none;
+            box-shadow: none;
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: #b5a37e;
+            margin-bottom: 20px;
         }
         
         .contact-card h3 {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Playfair Display */
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #2c3e4f;
-            font-weight: 600;
-        }
-        
-        .contact-role {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat */
-            font-family: 'Montserrat', 'Arial', sans-serif;
-            color: #d4af37;
-            font-size: 1rem;
-            margin-bottom: 15px;
-            font-weight: 500;
-            letter-spacing: 2px;
-        }
-        
-        .contact-phone-number {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
-            font-size: 1.4rem;
-            color: #2c3e4f;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        
-        .contact-btn-wa {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat */
-            font-family: 'Montserrat', 'Arial', sans-serif;
-            display: inline-block;
-            padding: 14px 35px;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 500;
-            transition: all 0.3s;
-            font-size: 1rem;
-            letter-spacing: 1px;
-        }
-        
-        /* Футер */
-        .footer-premium {
-            background: #1e2b36;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .footer-names-premium {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Playfair Display */
-            font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            font-weight: 500;
-            letter-spacing: 6px;
-        }
-        
-        .footer-heart {
-            color: #d4af37;
-            margin: 0 10px;
-        }
-        
-        .footer-premium p {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Cormorant Garamond */
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
-            font-size: 1.2rem;
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            color: #1e1e1e;
             font-weight: 400;
         }
         
-        /* Музыка */
+        .contact-role {
+            font-family: 'Inter', 'Arial', sans-serif;
+            color: #8a8a8a;
+            font-size: 0.75rem;
+            margin-bottom: 15px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .contact-phone-number {
+            font-family: 'Cardo', 'Georgia', serif;
+            font-size: 1.2rem;
+            color: #1e1e1e;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .contact-btn-wa {
+            font-family: 'Inter', 'Arial', sans-serif;
+            display: inline-block;
+            padding: 10px 30px;
+            background: transparent;
+            color: #1e1e1e;
+            text-decoration: none;
+            border: 1px solid #1e1e1e;
+            font-weight: 400;
+            transition: all 0.2s;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .contact-btn-wa:hover {
+            background: #1e1e1e;
+            color: white;
+        }
+        
+        /* ⭐⭐⭐ ФУТЕР - МИНИМАЛИЗМ ⭐⭐⭐ */
+        .footer {
+            background: #ffffff;
+            color: #1e1e1e;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .footer-names {
+            font-family: 'EB Garamond', 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        
+        .footer-heart {
+            color: #b5a37e;
+            margin: 0 10px;
+            font-style: normal;
+        }
+        
+        .footer p {
+            font-family: 'Cardo', 'Georgia', serif;
+            color: #6a6a6a;
+            font-size: 0.95rem;
+        }
+        
+        /* ⭐⭐⭐ МУЗЫКА - МИНИМАЛИЗМ ⭐⭐⭐ */
         .music-player {
             position: fixed;
             bottom: 30px;
@@ -498,28 +583,32 @@
         }
         
         .music-btn {
-            /* ⭐⭐ НОВЫЙ ШРИФТ: Montserrat */
-            font-family: 'Montserrat', 'Arial', sans-serif;
-            background: white;
-            border: none;
-            padding: 15px 25px;
-            border-radius: 50px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            font-family: 'Inter', 'Arial', sans-serif;
+            background: transparent;
+            border: 1px solid #e0e0e0;
+            padding: 12px 20px;
+            border-radius: 0;
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 12px;
-            color: #d4af37;
-            font-size: 1rem;
-            transition: all 0.3s;
-            font-weight: 500;
+            gap: 10px;
+            color: #1e1e1e;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+            font-weight: 400;
+            letter-spacing: 1px;
+            background: rgba(255,255,255,0.9);
         }
         
-        /* Адаптивность */
+        .music-btn:hover {
+            border-color: #b5a37e;
+            color: #b5a37e;
+        }
+        
+        /* ⭐⭐⭐ АДАПТИВНОСТЬ - МИНИМАЛИЗМ ⭐⭐⭐ */
         @media (max-width: 992px) {
             html { font-size: 15px; }
             .hero-names { font-size: 3.5rem; }
-            .hero-and { font-size: 2.4rem; }
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
         
@@ -527,60 +616,87 @@
             html { font-size: 14px; }
             .hero-names { font-size: 2.8rem; }
             .hero-and { font-size: 2rem; }
-            .hero-date { font-size: 1.6rem; }
-            .timer-premium-number { font-size: 2.5rem; }
-            .section-title { font-size: 2.2rem; }
-            .venue-name-premium { font-size: 2rem; }
+            .hero-date { font-size: 1.2rem; }
+            .timer-number { font-size: 2rem; }
+            .section-title { font-size: 1.8rem; }
+            .venue-name { font-size: 1.6rem; }
+            .form-container { padding: 40px 30px; }
+            .contact-grid { gap: 30px; }
         }
         
         @media (max-width: 480px) {
             html { font-size: 13px; }
             .hero-names { font-size: 2.2rem; }
             .hero-and { font-size: 1.6rem; }
-            .timer-premium-number { font-size: 2rem; }
-            .section-title { font-size: 2rem; }
-            .venue-name-premium { font-size: 1.8rem; }
+            .timer-number { font-size: 1.6rem; }
+            .timer-grid { gap: 15px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item { height: 200px; }
+            .timeline-item { padding-left: 20px; }
+            .timeline-time { min-width: 70px; font-size: 1.1rem; }
+            .map-buttons { flex-direction: column; }
+            .map-btn { justify-content: center; }
+            .checkbox-group { flex-direction: column; }
+            .music-player { left: 20px; right: 20px; bottom: 20px; }
+            .music-btn { width: 100%; justify-content: center; }
+        }
+        
+        /* ⭐⭐⭐ УТИЛИТЫ ⭐⭐⭐ */
+        .italic {
+            font-style: italic;
+        }
+        
+        .light {
+            font-weight: 300;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #f0f0f0;
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
-    <!-- Герой -->
+    <!-- ⭐⭐⭐ ГЕРОЙ - МИНИМАЛИЗМ ⭐⭐⭐ -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-pre animate">ДОРОГИЕ ГОСТИ!</div>
-            <h1 class="hero-names animate" style="animation-delay: 0.2s;">
-                АЙБЕК <span class="hero-and">&</span> АЙГЕРИМ
+        <div class="hero-content fade-in">
+            <div class="hero-pre">СВАДЕБНОЕ ПРИГЛАШЕНИЕ</div>
+            <h1 class="hero-names">
+                Айбек <span class="hero-and">&</span> Айгерим
             </h1>
-            <div class="hero-date animate" style="animation-delay: 0.4s;">26 ИЮНЯ 2026</div>
+            <div class="hero-date">26 июня 2026</div>
+            <div class="hero-divider"></div>
             
             <!-- Таймер -->
-            <div class="timer-premium animate" style="animation-delay: 0.6s;">
-                <div class="timer-premium-grid">
-                    <div class="timer-premium-item">
-                        <div class="timer-premium-number" id="days">00</div>
-                        <div class="timer-premium-label">ДНЕЙ</div>
+            <div class="timer-section">
+                <div class="timer-grid">
+                    <div class="timer-item">
+                        <div class="timer-number" id="days">00</div>
+                        <div class="timer-label">ДНЕЙ</div>
                     </div>
-                    <div class="timer-premium-item">
-                        <div class="timer-premium-number" id="hours">00</div>
-                        <div class="timer-premium-label">ЧАСОВ</div>
+                    <div class="timer-item">
+                        <div class="timer-number" id="hours">00</div>
+                        <div class="timer-label">ЧАСОВ</div>
                     </div>
-                    <div class="timer-premium-item">
-                        <div class="timer-premium-number" id="minutes">00</div>
-                        <div class="timer-premium-label">МИНУТ</div>
+                    <div class="timer-item">
+                        <div class="timer-number" id="minutes">00</div>
+                        <div class="timer-label">МИНУТ</div>
                     </div>
-                    <div class="timer-premium-item">
-                        <div class="timer-premium-number" id="seconds">00</div>
-                        <div class="timer-premium-label">СЕКУНД</div>
+                    <div class="timer-item">
+                        <div class="timer-number" id="seconds">00</div>
+                        <div class="timer-label">СЕКУНД</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Галерея -->
+    <!-- ⭐⭐⭐ ГАЛЕРЕЯ - МИНИМАЛИЗМ ⭐⭐⭐ -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">НАШИ МОМЕНТЫ</h2>
+            <h2 class="section-title">Наши моменты</h2>
+            <div class="section-subtitle">MEMORIES</div>
             <div class="section-divider"></div>
             <div class="gallery-grid">
                 <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=500');"></div>
@@ -591,44 +707,45 @@
         </div>
     </section>
     
-    <!-- Программа -->
-    <section style="background: #fcf9f7; padding: 80px 0;">
+    <!-- ⭐⭐⭐ ПРОГРАММА ДНЯ - КРАСИВЫЙ ФОН, КУРСИВЫ ⭐⭐⭐ -->
+    <section class="timeline-section">
         <div class="container">
-            <h2 class="section-title">ПРОГРАММА ДНЯ</h2>
+            <h2 class="section-title">Программа дня</h2>
+            <div class="section-subtitle">SCHEDULE</div>
             <div class="section-divider"></div>
             
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-time">18:00</div>
-                    <div>
+                    <div class="timeline-content">
                         <h3 class="timeline-title">Сбор гостей</h3>
                         <div class="timeline-desc">Фуршет, живая музыка, фотосессия</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">19:00</div>
-                    <div>
+                    <div class="timeline-content">
                         <h3 class="timeline-title">Торжественная церемония</h3>
                         <div class="timeline-desc">Встреча молодоженов, беташар</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">20:00</div>
-                    <div>
+                    <div class="timeline-content">
                         <h3 class="timeline-title">Свадебный ужин</h3>
                         <div class="timeline-desc">Банкет, тосты, конкурсы</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">22:00</div>
-                    <div>
+                    <div class="timeline-content">
                         <h3 class="timeline-title">Танцевальная программа</h3>
                         <div class="timeline-desc">Первый танец, дискотека</div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">00:00</div>
-                    <div>
+                    <div class="timeline-content">
                         <h3 class="timeline-title">Завершение вечера</h3>
                         <div class="timeline-desc">Прощальный танец</div>
                     </div>
@@ -637,47 +754,49 @@
         </div>
     </section>
     
-    <!-- Место проведения -->
-    <section class="venue-premium">
+    <!-- ⭐⭐⭐ МЕСТО ПРОВЕДЕНИЯ - МИНИМАЛИЗМ ⭐⭐⭐ -->
+    <section class="venue-section">
         <div class="container">
-            <h2 class="section-title">МЕСТО ПРОВЕДЕНИЯ</h2>
+            <h2 class="section-title">Место проведения</h2>
+            <div class="section-subtitle">LOCATION</div>
             <div class="section-divider"></div>
             
-            <div class="venue-card-premium">
-                <div class="venue-name-premium">РЕСТОРАН «ДӘСТҮРЛІК»</div>
-                <div class="venue-address-premium">г. Астана, пр. Тауелсиздик, 15</div>
-                <div class="venue-time-premium">НАЧАЛО В 18:00</div>
+            <div class="venue-card">
+                <div class="venue-name">Ресторан «Дәстүрлік»</div>
+                <div class="venue-address">г. Астана, пр. Тауелсиздик, 15</div>
+                <div class="venue-time">НАЧАЛО В 18:00</div>
             </div>
             
-            <div class="map-premium">
+            <div class="map-container">
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b8c8d8e8f8a8b8c8d8e8f8a8b8c8d8e8f8a8b&source=constructor" loading="lazy"></iframe>
             </div>
             
-            <div class="map-buttons-premium">
-                <a href="https://yandex.kz/maps/163/astana/?ll=71.430%2C51.160&z=17" target="_blank" class="map-btn-premium">
+            <div class="map-buttons">
+                <a href="https://yandex.kz/maps/163/astana/?ll=71.430%2C51.160&z=17" target="_blank" class="map-btn">
                     <i class="fas fa-map"></i> Яндекс Карты
                 </a>
-                <a href="https://www.google.com/maps/search/?api=1&query=Тауелсиздик+15+Астана" target="_blank" class="map-btn-premium">
+                <a href="https://www.google.com/maps/search/?api=1&query=Тауелсиздик+15+Астана" target="_blank" class="map-btn">
                     <i class="fab fa-google"></i> Google Maps
                 </a>
-                <a href="https://2gis.kz/astana/geo/123456789" target="_blank" class="map-btn-premium">
+                <a href="https://2gis.kz/astana/geo/123456789" target="_blank" class="map-btn">
                     <i class="fas fa-location-dot"></i> 2GIS
                 </a>
             </div>
         </div>
     </section>
     
-    <!-- ФОРМА - APPS SCRIPT -->
-    <section class="rsvp-premium">
+    <!-- ⭐⭐⭐ ФОРМА - APPS SCRIPT ⭐⭐⭐ -->
+    <section class="form-section">
         <div class="container">
-            <h2 class="section-title">ПОДТВЕРДИТЕ УЧАСТИЕ</h2>
+            <h2 class="section-title">Подтвердите участие</h2>
+            <div class="section-subtitle">RSVP</div>
             <div class="section-divider"></div>
             
-            <div class="form-premium">
+            <div class="form-container">
                 <form id="rsvpForm">
                     <div class="form-group">
                         <label>Ваше имя и фамилия *</label>
-                        <input type="text" id="guestName" required placeholder="Иванов Иван">
+                        <input type="text" id="guestName" required placeholder="Иван Иванов">
                     </div>
                     
                     <div class="form-group">
@@ -697,7 +816,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <label>Особые пожелания по питанию</label>
+                        <label>Особые пожелания</label>
                         <div class="checkbox-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" id="diet1" value="Вегетарианское"> Вегетарианское
@@ -712,12 +831,12 @@
                     </div>
                     
                     <div class="form-group">
-                        <label>Пожелания молодоженам</label>
-                        <textarea id="guestMessage" rows="3" placeholder="Напишите свои пожелания..."></textarea>
+                        <label>Пожелания</label>
+                        <textarea id="guestMessage" rows="2" placeholder="Напишите свои пожелания..."></textarea>
                     </div>
                     
-                    <button type="submit" class="submit-btn-premium">
-                        <i class="fas fa-paper-plane"></i> ОТПРАВИТЬ ПОДТВЕРЖДЕНИЕ
+                    <button type="submit" class="submit-btn">
+                        ОТПРАВИТЬ
                     </button>
                 </form>
                 
@@ -726,17 +845,18 @@
         </div>
     </section>
     
-    <!-- WhatsApp жениха и невесты -->
-    <section class="contact-premium">
+    <!-- ⭐⭐⭐ КОНТАКТЫ - МИНИМАЛИЗМ ⭐⭐⭐ -->
+    <section class="contact-section">
         <div class="container">
-            <h2 class="section-title">СВЯЖИТЕСЬ С НАМИ</h2>
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="section-subtitle">CONTACT</div>
             <div class="section-divider"></div>
             
             <div class="contact-grid">
                 <!-- Жених -->
                 <div class="contact-card">
-                    <div class="contact-icon whatsapp-icon">
-                        <i class="fab fa-whatsapp"></i>
+                    <div class="contact-icon">
+                        <i class="fas fa-rings"></i>
                     </div>
                     <h3>Айбек</h3>
                     <div class="contact-role">ЖЕНИХ</div>
@@ -744,14 +864,14 @@
                     <a href="https://wa.me/77771112233?text=Здравствуйте, Айбек! Подтверждаю участие на вашей свадьбе 26.06.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
-                        <i class="fab fa-whatsapp"></i> Написать жениху
+                        <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
                 
                 <!-- Невеста -->
                 <div class="contact-card">
-                    <div class="contact-icon whatsapp-icon">
-                        <i class="fab fa-whatsapp"></i>
+                    <div class="contact-icon">
+                        <i class="fas fa-rings"></i>
                     </div>
                     <h3>Айгерим</h3>
                     <div class="contact-role">НЕВЕСТА</div>
@@ -759,32 +879,28 @@
                     <a href="https://wa.me/77774445566?text=Здравствуйте, Айгерим! Подтверждаю участие на вашей свадьбе 26.06.2026" 
                        target="_blank" 
                        class="contact-btn-wa">
-                        <i class="fab fa-whatsapp"></i> Написать невесте
+                        <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Футер -->
-    <footer class="footer-premium">
-        <div class="footer-names-premium">
-            АЙБЕК <span class="footer-heart">❤</span> АЙГЕРИМ
+    <!-- ⭐⭐⭐ ФУТЕР - МИНИМАЛИЗМ ⭐⭐⭐ -->
+    <footer class="footer">
+        <div class="footer-names">
+            Айбек <span class="footer-heart">✦</span> Айгерим
         </div>
-        <div style="font-size: 1.2rem; margin-bottom: 25px; color: rgba(255,255,255,0.8);">
-            26 июня 2026 • Астана
-        </div>
-        <div style="color: rgba(255,255,255,0.6);">
-            <p style="margin-bottom: 10px;">С нетерпением ждем вас!</p>
-            <p style="font-style: italic;">«Две души, одно сердце»</p>
-        </div>
+        <p>26 июня 2026 • Астана</p>
+        <p style="margin-top: 30px; font-size: 0.9rem;">С нетерпением ждем вас</p>
+        <p style="margin-top: 10px; font-style: italic; color: #b5a37e;">две души, одно сердце</p>
     </footer>
     
-    <!-- Музыка - ВАША ССЫЛКА -->
+    <!-- ⭐⭐⭐ МУЗЫКА ⭐⭐⭐ -->
     <div class="music-player">
         <button class="music-btn" id="musicToggle">
             <i class="fas fa-music"></i>
-            <span>Включить музыку</span>
+            <span>Музыка</span>
         </button>
         <audio id="bgMusic" loop preload="auto">
             <source src="https://assets.mixkit.co/music/493/493.mp3" type="audio/mpeg">
@@ -792,7 +908,7 @@
     </div>
     
     <script>
-        // ✅ ВСТАВЬТЕ СЮДА ВАШУ ССЫЛКУ НА APPS SCRIPT
+        // ✅ ВАША ССЫЛКА НА APPS SCRIPT
         const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxRHAriRCa0dyAnVWkXN5eVt75IDmggcgzCKM5p2p-m6ZVteaVfhD1qhMatnL62da2x/exec';
         
         // Таймер
@@ -826,106 +942,75 @@
         toggleBtn.addEventListener('click', function() {
             if (isPlaying) {
                 music.pause();
-                toggleBtn.innerHTML = '<i class="fas fa-music"></i><span>Включить музыку</span>';
+                toggleBtn.innerHTML = '<i class="fas fa-music"></i><span>Музыка</span>';
             } else {
                 music.play();
-                toggleBtn.innerHTML = '<i class="fas fa-pause"></i><span>Выключить музыку</span>';
+                toggleBtn.innerHTML = '<i class="fas fa-pause"></i><span>Пауза</span>';
             }
             isPlaying = !isPlaying;
         });
         
-        // Автостарт музыки
+        // Автостарт
         window.addEventListener('load', function() {
             music.play().then(() => {
                 isPlaying = true;
-                toggleBtn.innerHTML = '<i class="fas fa-pause"></i><span>Выключить музыку</span>';
+                toggleBtn.innerHTML = '<i class="fas fa-pause"></i><span>Пауза</span>';
             }).catch(() => {});
         });
         
-        // ФОРМА - ОТПРАВКА В GOOGLE TABLES
+        // Форма
         document.getElementById('rsvpForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            const submitBtn = this.querySelector('.submit-btn-premium');
+            const submitBtn = this.querySelector('.submit-btn');
             const originalText = submitBtn.innerHTML;
             
-            // Собираем диету
             const diet = [];
             if (document.getElementById('diet1').checked) diet.push('Вегетарианское');
             if (document.getElementById('diet2').checked) diet.push('Халяльное');
             if (document.getElementById('diet3').checked) diet.push('Аллергия');
             
-            // Формируем данные
             const formData = {
                 name: document.getElementById('guestName').value,
                 phone: document.getElementById('guestPhone').value,
                 guests: document.getElementById('guestCount').value,
                 diet: diet.join(', '),
                 message: document.getElementById('guestMessage').value,
-                wedding: 'Айбек и Айгерим - 26.06.2026',
-                timestamp: new Date().toLocaleString('ru-RU')
+                wedding: 'Айбек и Айгерим - 26.06.2026'
             };
             
-            // Показываем загрузку
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+            submitBtn.innerHTML = 'Отправка...';
             submitBtn.disabled = true;
             
             try {
-                // Отправляем в Google Sheets
                 await fetch(GOOGLE_SCRIPT_URL, {
                     method: 'POST',
                     mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
+                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
                 
-                // Показываем успех
                 document.getElementById('formResponse').innerHTML = `
-                    <div style="background: #e8f5e9; padding: 25px; border-radius: 15px; border-left: 5px solid #4caf50;">
-                        <i class="fas fa-check-circle" style="color: #4caf50; font-size: 2rem; margin-bottom: 15px;"></i>
-                        <h3 style="color: #2c3e4f; margin-bottom: 10px; font-family: 'Playfair Display', serif;">Спасибо, ${formData.name}!</h3>
-                        <p style="color: #5d6d7e; margin-bottom: 5px; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Ваше подтверждение сохранено.</p>
-                        <p style="color: #5d6d7e; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Ждем вас 26 июня 2026! 🎉</p>
+                    <div style="padding: 20px; border: 1px solid #e8e8e8;">
+                        <p style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.3rem; color: #b5a37e; margin-bottom: 10px;">Спасибо, ${formData.name}!</p>
+                        <p style="font-family: 'Cardo', serif; color: #6a6a6a;">Ваше подтверждение сохранено.</p>
+                        <p style="font-family: 'Cardo', serif; color: #6a6a6a; margin-top: 10px;">Ждем вас 26 июня 2026</p>
                     </div>
                 `;
                 
-                // Очищаем форму
                 this.reset();
                 
             } catch (error) {
-                // Показываем ошибку
                 document.getElementById('formResponse').innerHTML = `
-                    <div style="background: #ffebee; padding: 25px; border-radius: 15px; border-left: 5px solid #f44336;">
-                        <i class="fas fa-exclamation-triangle" style="color: #f44336; font-size: 2rem; margin-bottom: 15px;"></i>
-                        <h3 style="color: #2c3e4f; margin-bottom: 10px; font-family: 'Playfair Display', serif;">Ошибка отправки</h3>
-                        <p style="color: #5d6d7e; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;">Пожалуйста, позвоните нам: +7 (777) 123-45-67</p>
+                    <div style="padding: 20px; border: 1px solid #e8e8e8;">
+                        <p style="font-family: 'EB Garamond', serif; font-style: italic; color: #b5a37e;">Ошибка</p>
+                        <p style="font-family: 'Cardo', serif;">Позвоните нам: +7 (777) 123-45-67</p>
                     </div>
                 `;
             }
             
-            // Возвращаем кнопку
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        });
-        
-        // Анимации
-        const animateElements = document.querySelectorAll('.gallery-item, .timeline-item, .venue-card-premium, .contact-card');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        animateElements.forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
         });
     </script>
 </body>
